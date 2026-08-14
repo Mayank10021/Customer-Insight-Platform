@@ -103,6 +103,10 @@ def inject_base_css():
             min-width: 250px !important;
             max-width: 250px !important;
         }}
+        /* Collapsed state for custom sidebar toggle */
+        [data-testid="stSidebarUserContent"] {{
+            transition: all 0.2s ease;
+        }}
         [data-testid="stSidebar"] > div {{
             padding-top: 1rem;
         }}
@@ -153,6 +157,17 @@ def inject_base_css():
             white-space: nowrap;
         }}
         .fm-sidebar-brand span:first-child {{
+            background: linear-gradient(135deg, {CORAL}, {TEAL});
+            width: 30px; height: 30px; border-radius: 9px; flex-shrink: 0;
+            display:flex; align-items:center; justify-content:center;
+            font-size: 15px; box-shadow: 0 4px 10px rgba(108,92,231,0.35);
+        }}
+        .fm-sidebar-brand-collapsed {{
+            display:flex; align-items:center; justify-content:center; gap:10px; color:{NAVY};
+            font-weight:800; font-size:16px; padding: 6px 10px 16px 10px;
+            letter-spacing: 0.2px; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;
+        }}
+        .fm-sidebar-brand-collapsed span {{
             background: linear-gradient(135deg, {CORAL}, {TEAL});
             width: 30px; height: 30px; border-radius: 9px; flex-shrink: 0;
             display:flex; align-items:center; justify-content:center;
@@ -680,7 +695,7 @@ NAV_ITEMS = [
     ("feedback", "💬", "Give Feedback"),
 ]
 
-ADMIN_NAV_ITEMS = NAV_ITEMS + [("add_data", "➕", "Add New Data"), ("vendor", "🏷️", "Vendor Management"),
+ADMIN_NAV_ITEMS = NAV_ITEMS + [("vendor", "🏷️", "Vendor Management"),
                                  ("vendor360", "🏢", "Vendor 360"), ("admin", "⚙️", "Admin Panel")]
 
 # A Vendor's own scoped navigation — every page here reads from data that's
@@ -725,7 +740,7 @@ _GROUP_DEFS = [
     ("Vendors", "🏬", ["vendor", "vendor360"]),
     ("Reports", "📄", ["reports"]),
     ("Feedback", "💬", ["feedback"]),
-    ("Admin", "⚙️", ["add_data", "admin"]),
+    ("Admin", "⚙️", ["admin"]),
 ]
 
 
@@ -772,12 +787,16 @@ def _build_notifications(data):
 
 def sidebar_nav(current_page, is_admin=False, role=None):
     """
-    Renders a clean, professional left sidebar: brand header, grouped nav
-    (a group with one page is a plain button; a group with several pages
+    Renders a clean, professional left sidebar: brand header with collapse/expand toggle,
+    grouped nav (a group with one page is a plain button; a group with several pages
     gets a small section label followed by its indented pages — no popovers
     needed since a sidebar has the vertical room a top bar didn't). Returns
     the page key the user clicked, or current_page if nothing changed.
     """
+    # Initialize sidebar state
+    if "sidebar_collapsed" not in st.session_state:
+        st.session_state.sidebar_collapsed = False
+    
     if is_admin:
         items = ADMIN_NAV_ITEMS
     elif role == "Vendor":
@@ -791,23 +810,51 @@ def sidebar_nav(current_page, is_admin=False, role=None):
     clicked = current_page
 
     with st.sidebar:
-        st.markdown(
-            '<div class="fm-sidebar-brand"><span>📱</span><span>CustomerLens</span></div>',
-            unsafe_allow_html=True,
-        )
+        # Brand header with collapse/expand toggle
+        col_brand, col_toggle = st.columns([4, 0.8])
+        with col_brand:
+            if st.session_state.sidebar_collapsed:
+                st.markdown(
+                    '<div class="fm-sidebar-brand-collapsed"><span>📱</span></div>',
+                    unsafe_allow_html=True,
+                )
+            else:
+                st.markdown(
+                    '<div class="fm-sidebar-brand"><span>📱</span><span>CustomerLens</span></div>',
+                    unsafe_allow_html=True,
+                )
+        
+        with col_toggle:
+            toggle_icon = "»" if st.session_state.sidebar_collapsed else "«"
+            if st.button(toggle_icon, key="sidebar_toggle", width="stretch", help="Toggle sidebar"):
+                st.session_state.sidebar_collapsed = not st.session_state.sidebar_collapsed
+                st.rerun()
+        
+        st.markdown("<div style='height:6px;'></div>", unsafe_allow_html=True)
+        
+        # Render navigation items
         for group_label, group_icon, sub in groups:
             if len(sub) == 1:
                 key, icon, label = sub[0]
                 with st.container(key=f"nav_{key}"):
-                    if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
-                        clicked = key
-            else:
-                st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>',
-                            unsafe_allow_html=True)
-                for key, icon, label in sub:
-                    with st.container(key=f"nav_{key}"):
+                    if st.session_state.sidebar_collapsed:
+                        if st.button(icon, key=f"btn_{key}", width="stretch", help=label):
+                            clicked = key
+                    else:
                         if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
                             clicked = key
+            else:
+                if not st.session_state.sidebar_collapsed:
+                    st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>',
+                                unsafe_allow_html=True)
+                for key, icon, label in sub:
+                    with st.container(key=f"nav_{key}"):
+                        if st.session_state.sidebar_collapsed:
+                            if st.button(icon, key=f"btn_{key}", width="stretch", help=label):
+                                clicked = key
+                        else:
+                            if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
+                                clicked = key
 
     # Highlight whichever pill is currently active
     st.markdown(f"""
