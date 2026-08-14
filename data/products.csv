@@ -1,0 +1,601 @@
+ProductID,ProductName,Category,Brand,Cost,Price,Stock,Rating,RAM_GB,Storage_GB,Battery_mAh,CameraMP,ScreenSize_in,Processor,Color,Network,WarrantyMonths
+P0001,OnePlus 5T (Graphite),Mid-Range,OnePlus,20872.38,26597.03,97,4.9,8,128,4796,50,6.6,Snapdragon 8s Gen 4,Graphite,5G,12
+P0002,Moto G6 (Cream),Budget,Motorola,8192.4,9840.03,221,3.1,4,64,4347,50,6.5,Snapdragon 665,Cream White,5G,12
+P0003,Pixel 3 (Cream),Premium,Google,45855.56,51901.37,380,3.2,12,256,4305,48,6.4,Snapdragon 765G,Cream White,5G,12
+P0004,Nothing Phone (1) (Cream),Premium,Nothing,49182.98,59196.76,371,3.1,12,128,4609,64,6.7,Dimensity 7300 Pro,Cream White,5G,24
+P0005,Vivo V9 (Ocean),Mid-Range,Vivo,28542.19,35332.27,167,3.1,8,256,4961,48,6.6,Snapdragon 7 Gen 4,Ocean Blue,5G,24
+P0006,Realme 1 (Sunrise),Budget,Realme,15137.17,18960.62,393,3.6,4,128,4420,50,6.5,Snapdragon 8s Elite,Sunrise Orange,4G,24
+P0007,Mi 8 (Rose),Mid-Range,Xiaomi,15662.61,19248.9,349,4.8,6,256,4751,50,6.6,Snapdragon 8 Gen 1,Rose Gold,5G,12
+P0008,iPhone X (Ocean),Premium,Apple,40024.21,48594.84,287,4.9,12,256,4945,50,6.4,Apple A17 Pro,Ocean Blue,5G,12
+P0009,Oppo F9 (Rose),Mid-Range,Oppo,31432.63,36797.84,69,4.2,6,256,5083,50,6.7,Dimensity 9400,Rose Gold,5G,12
+P0010,Pixel 3a (Midnight),Budget,Google,9867.24,11955.28,199,4.8,4,64,4097,50,6.4,Google Tensor G5,Midnight Black,5G,12
+P0011,Vivo V15 Pro (Titanium),Mid-Range,Vivo,31775.14,36297.66,118,3.1,8,128,5066,50,6.7,Snapdragon 7 Gen 4,Titanium Gray,5G,12
+P0012,Pixel 4 (Lavender),Premium,Google,58866.43,66598.7,0,4.8,12,128,4835,48,6.6,Google Tensor G5,Lavender,5G,12
+P0013,Redmi Note 7 Pro (Lavender),Budget,Xiaomi,14522.85,16249.87,57,3.3,6,64,4549,48,6.5,Snapdragon 660,Lavender,5G,12
+P0014,Pixel 4a (Graphite),Budget,Google,11904.93,13858.24,332,4.5,6,64,4585,48,6.6,Snapdragon 765G,Graphite,4G,12
+P0015,Realme 2 Pro (Cream),Budget,Realme,14473.47,16745.41,121,3.1,6,64,4466,50,6.5,Snapdragon 778G,Cream White,5G,12
+P0016,Mi 9 (Silver),Premium,Xiaomi,50038.0,58132.05,292,4.6,8,256,4636,50,6.7,Snapdragon 8 Gen 1,Silver,5G,12
+P0017,Oppo Reno 2 (Forest),Mid-Range,Oppo,22371.76,26069.09,299,4.2,6,256,4785,50,6.5,Snapdragon 865,Forest Green,5G,12
+P0018,Vivo V17 (Lavender),Mid-Range,Vivo,27984.91,32446.81,12,3.6,8,256,4849,50,6.6,Snapdragon 865,Lavender,5G,12
+P0019,OnePlus 6T (Lavender),Premium,OnePlus,55733.78,69559.73,303,3.3,8,128,4734,50,6.5,Dimensity 8350,Lavender,5G,12
+P0020,Realme X (Sunrise),Mid-Range,Realme,31240.15,35815.54,222,4.6,6,256,5132,50,6.7,Snapdragon 665,Sunrise Orange,5G,12
+P0021,Realme 5 Pro (Graphite),Budget,Realme,7465.5,9435.51,233,4.8,4,64,4478,48,6.4,Snapdragon 5 Gen 1,Graphite,5G,12
+P0022,iPhone XR (Titanium),Mid-Range,Apple,25874.88,32407.87,302,3.2,8,128,5001,48,6.6,Apple A12 Bionic,Titanium Gray,5G,12
+P0023,Galaxy S8 (Forest),Mid-Range,Samsung,20544.99,23069.13,377,4.3,8,256,5164,64,6.6,Exynos 9810,Forest Green,5G,12
+P0024,Realme X2 Pro (Midnight),Premium,Realme,54351.36,62613.04,203,4.2,12,128,4816,50,6.6,MediaTek Helio P70,Midnight Black,5G,12
+P0025,Galaxy S9+ (Sunrise),Mid-Range,Samsung,29297.72,36781.96,195,4.1,6,256,4989,48,6.6,Exynos 2200,Sunrise Orange,5G,24
+P0026,Galaxy Note 9 (Forest),Premium,Samsung,50552.45,63002.93,54,4.9,12,128,4325,64,6.4,Snapdragon 8 Elite,Forest Green,5G,12
+P0027,Nothing Phone (2) (Midnight),Premium,Nothing,40617.56,49814.79,77,4.9,12,128,4235,48,6.5,Snapdragon 8+ Gen 1,Midnight Black,5G,12
+P0028,Vivo X50 (Forest),Premium,Vivo,55620.26,62679.72,295,4.3,12,256,4927,50,6.5,Snapdragon 7 Gen 4,Forest Green,5G,12
+P0029,Vivo V20 (Graphite),Mid-Range,Vivo,20087.17,23660.43,63,3.3,6,256,4947,64,6.7,Dimensity 8350,Graphite,5G,24
+P0030,Oppo Find X2 (Titanium),Flagship,Oppo,126556.71,150841.26,248,3.8,12,512,4707,50,6.6,MediaTek Helio P70,Titanium Gray,5G,24
+P0031,Galaxy S10+ (Midnight),Premium,Samsung,50174.13,59918.57,399,3.1,8,128,4484,64,6.4,Exynos 2500,Midnight Black,5G,12
+P0032,Pixel 5 (Rose),Premium,Google,44961.19,53643.45,319,4.1,12,128,4594,64,6.7,Google Tensor G4,Rose Gold,5G,12
+P0033,OnePlus 7 Pro (Rose),Flagship,OnePlus,100704.29,118928.89,189,4.0,12,256,5138,200,6.7,Snapdragon 888,Rose Gold,5G,12
+P0034,Moto G7 Power (Graphite),Budget,Motorola,9566.81,10690.23,103,4.3,6,128,4534,50,6.5,Snapdragon 8 Gen 1,Graphite,5G,12
+P0035,Pixel 6 (Graphite),Premium,Google,57130.88,68212.16,0,4.9,12,256,4879,64,6.6,Google Tensor G4,Graphite,5G,12
+P0036,Vivo X60 Pro (Lavender),Flagship,Vivo,73363.55,92955.59,40,3.4,16,256,5143,50,6.8,Dimensity 8350,Lavender,5G,12
+P0037,Vivo V21 (Midnight),Mid-Range,Vivo,26506.22,33188.18,384,3.1,8,256,4860,48,6.6,Snapdragon 720G,Midnight Black,5G,12
+P0038,Vivo X70 Pro (Sunrise),Flagship,Vivo,125632.72,142857.7,306,3.1,12,256,4520,108,6.8,Snapdragon 720G,Sunrise Orange,5G,24
+P0039,Vivo V23 (Sunrise),Mid-Range,Vivo,19117.48,23021.74,231,4.3,8,128,5015,64,6.6,Snapdragon 865,Sunrise Orange,5G,12
+P0040,OnePlus 7T (Titanium),Premium,OnePlus,58938.53,65272.38,275,4.7,12,256,4866,64,6.8,Snapdragon 8 Elite,Titanium Gray,5G,12
+P0041,Moto One Vision (Cream),Mid-Range,Motorola,23566.61,27530.37,385,4.7,8,128,4697,64,6.5,Snapdragon 632,Cream White,5G,12
+P0042,Realme 6 Pro (Graphite),Mid-Range,Realme,25371.13,28468.9,302,3.7,6,256,5139,48,6.6,MediaTek Helio P70,Graphite,5G,12
+P0043,Redmi Note 8 Pro (Ocean),Budget,Xiaomi,8911.62,10591.73,259,3.9,6,64,4453,13,6.6,Snapdragon 8 Elite,Ocean Blue,5G,12
+P0044,Pixel 6 Pro (Silver),Flagship,Google,64706.39,80479.93,289,3.2,16,512,4546,108,6.7,Google Tensor,Silver,5G,12
+P0045,Realme X7 Pro (Cream),Premium,Realme,60200.91,66443.69,179,3.1,8,128,4232,50,6.8,Snapdragon 5 Gen 1,Cream White,5G,12
+P0046,Nothing Phone (2a) (Ocean),Mid-Range,Nothing,16091.83,19375.55,331,3.7,6,256,4874,50,6.7,Dimensity 7300 Pro,Ocean Blue,5G,12
+P0047,Pixel 7 (Titanium),Premium,Google,38790.36,47694.22,22,4.5,12,256,4375,48,6.7,Snapdragon 765G,Titanium Gray,5G,12
+P0048,Galaxy Note 10+ (Sunrise),Flagship,Samsung,133761.69,159764.3,20,4.4,16,256,4875,200,6.6,Snapdragon 845,Sunrise Orange,5G,12
+P0049,iPhone XS (Ocean),Premium,Apple,61527.45,69270.78,299,4.2,12,128,4731,48,6.5,Apple A16 Bionic,Ocean Blue,5G,12
+P0050,iPhone 11 (Midnight),Mid-Range,Apple,25225.24,30842.71,232,4.1,8,128,4710,64,6.5,Apple A12 Bionic,Midnight Black,5G,12
+P0051,Galaxy A50 (Midnight),Budget,Samsung,13822.22,16965.51,255,3.9,6,128,4762,48,6.5,Snapdragon 8 Elite,Midnight Black,5G,12
+P0052,Realme 8 Pro (Forest),Mid-Range,Realme,29636.57,37385.02,287,3.2,8,128,4552,50,6.6,Snapdragon 8s Elite,Forest Green,5G,12
+P0053,Mi 10 (Titanium),Premium,Xiaomi,40056.06,49163.39,271,4.7,8,128,4257,64,6.7,Dimensity 9400,Titanium Gray,5G,24
+P0054,Vivo X80 Pro (Rose),Flagship,Vivo,94584.51,119040.51,210,5.0,12,1024,4880,108,6.8,Snapdragon 720G,Rose Gold,5G,12
+P0055,Vivo V25 (Rose),Mid-Range,Vivo,24694.37,31596.98,99,3.8,8,256,5183,48,6.6,Snapdragon 865,Rose Gold,5G,12
+P0056,Realme GT (Sunrise),Flagship,Realme,104216.04,132582.51,266,4.1,12,256,5484,200,6.7,Snapdragon 8s Elite,Sunrise Orange,5G,24
+P0057,Oppo Reno 4 (Lavender),Mid-Range,Oppo,27519.22,33475.9,342,3.5,6,128,5090,50,6.6,Dimensity 9400,Lavender,5G,12
+P0058,Realme 9 Pro+ (Graphite),Mid-Range,Realme,28833.67,34066.19,138,3.0,6,128,5041,50,6.5,MediaTek Helio P70,Graphite,5G,12
+P0059,Pixel 7 Pro (Titanium),Flagship,Google,80499.28,100786.8,285,4.2,12,256,5041,200,6.7,Google Tensor G5,Titanium Gray,5G,12
+P0060,Realme GT Neo 3 (Sunrise),Gaming,Realme,23400.26,27407.4,399,3.0,16,128,5646,64,6.8,Snapdragon 778G,Sunrise Orange,5G,12
+P0061,Realme 10 Pro+ (Titanium),Mid-Range,Realme,19968.05,24440.4,158,4.0,6,256,4947,50,6.7,Dimensity 8350,Titanium Gray,5G,12
+P0062,Galaxy S20 Ultra (Forest),Flagship,Samsung,90464.47,101985.36,315,4.5,12,256,5453,50,6.6,Snapdragon 8 Gen 2,Forest Green,5G,12
+P0063,Moto G8 Power (Titanium),Budget,Motorola,7828.83,10013.75,15,4.4,4,64,4217,48,6.5,Snapdragon 7 Gen 4,Titanium Gray,4G,12
+P0064,Oppo Find X3 Pro (Midnight),Flagship,Oppo,71601.67,79094.04,321,4.8,12,512,5449,200,6.8,Dimensity 9400,Midnight Black,5G,12
+P0065,iPhone 11 Pro Max (Forest),Premium,Apple,37083.12,46149.18,356,3.6,12,128,4512,64,6.7,Apple A12 Bionic,Forest Green,5G,12
+P0066,Pixel 8 (Forest),Premium,Google,38620.34,47181.93,173,3.5,12,256,4566,48,6.7,Google Tensor G4,Forest Green,5G,12
+P0067,Redmi Note 9 Pro (Sunrise),Budget,Xiaomi,13756.24,16410.14,82,4.1,4,128,4819,50,6.4,Snapdragon 8 Elite,Sunrise Orange,5G,12
+P0068,Mi 11 (Midnight),Flagship,Xiaomi,123615.34,154948.91,11,3.7,12,1024,4889,108,6.6,Snapdragon 8 Elite,Midnight Black,5G,12
+P0069,Oppo Reno 6 (Cream),Mid-Range,Oppo,29167.46,35903.32,226,4.8,8,128,4662,64,6.6,MediaTek Helio P70,Cream White,5G,12
+P0070,OnePlus 8 (Forest),Premium,OnePlus,50026.85,62279.06,385,3.0,12,256,4854,48,6.5,Snapdragon 855,Forest Green,5G,12
+P0071,iPhone SE (2nd Gen) (Midnight),Budget,Apple,13891.73,16811.27,176,3.6,6,128,4615,13,6.5,Apple A19 Pro,Midnight Black,5G,12
+P0072,Moto Edge (Ocean),Premium,Motorola,49837.55,61896.41,227,3.2,12,128,4946,50,6.6,Dimensity 7300,Ocean Blue,5G,12
+P0073,Realme GT Neo 5 (Sunrise),Gaming,Realme,38654.31,42654.16,0,4.0,12,128,5916,64,6.7,MediaTek Helio P70,Sunrise Orange,5G,12
+P0074,Redmi Note 10 Pro (Titanium),Mid-Range,Xiaomi,17663.77,20164.72,254,4.3,6,256,4537,48,6.5,Snapdragon 7s Gen 3,Titanium Gray,5G,24
+P0075,Nothing Phone (3) (Ocean),Premium,Nothing,47242.76,60426.14,380,3.7,8,128,4300,64,6.7,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0076,Nothing Phone (3a) (Titanium),Mid-Range,Nothing,34630.19,39099.18,38,3.2,8,256,4839,64,6.7,Snapdragon 8+ Gen 1,Titanium Gray,5G,12
+P0077,Oppo Find X5 Pro (Forest),Flagship,Oppo,111065.28,126837.98,216,3.5,12,1024,4831,108,6.7,Snapdragon 6 Gen 4,Forest Green,5G,12
+P0078,iPhone 12 Mini (Midnight),Mid-Range,Apple,23456.04,27895.4,366,4.2,8,256,4624,64,6.7,Apple A16 Bionic,Midnight Black,5G,12
+P0079,Vivo X90 Pro (Lavender),Flagship,Vivo,82065.84,96647.09,23,3.5,16,1024,5432,108,6.8,Dimensity 8350,Lavender,5G,24
+P0080,Moto G9 Power (Titanium),Budget,Motorola,6427.97,8166.1,265,3.4,6,64,4152,50,6.4,Snapdragon 6s Gen 4,Titanium Gray,4G,12
+P0081,Xiaomi 12 (Ocean),Flagship,Xiaomi,89868.66,113021.94,187,3.8,12,512,5179,108,6.8,Snapdragon 8 Gen 1,Ocean Blue,5G,24
+P0082,Moto Edge 20 (Cream),Premium,Motorola,51820.87,59210.32,369,3.9,12,256,4232,50,6.6,MediaTek Helio P35,Cream White,5G,12
+P0083,Oppo Reno 8 (Graphite),Mid-Range,Oppo,16224.18,20371.69,6,4.4,6,256,5076,50,6.7,Dimensity 9400,Graphite,5G,24
+P0084,Oppo Find X6 Pro (Lavender),Flagship,Oppo,90296.94,109337.69,187,4.4,16,256,5139,50,6.8,Dimensity 9400,Lavender,5G,12
+P0085,Vivo V29 (Lavender),Premium,Vivo,44695.0,54296.07,121,3.9,8,128,4896,64,6.7,Snapdragon 720G,Lavender,5G,12
+P0086,Redmi Note 11 Pro+ (Forest),Mid-Range,Xiaomi,27806.47,31976.29,313,4.2,8,256,4916,50,6.6,Snapdragon 855,Forest Green,5G,12
+P0087,Oppo Reno10 Pro (Sunrise),Premium,Oppo,42308.63,50724.08,343,3.6,12,256,4919,48,6.6,Snapdragon 865,Sunrise Orange,5G,24
+P0088,Vivo X100 Pro (Forest),Flagship,Vivo,128458.41,147801.31,203,3.7,16,256,4862,108,6.8,Snapdragon 675,Forest Green,5G,12
+P0089,Vivo V40 (Rose),Premium,Vivo,39310.16,44635.83,223,3.6,12,256,4743,50,6.6,Snapdragon 7 Gen 4,Rose Gold,5G,12
+P0090,Pixel 8 Pro (Silver),Flagship,Google,91642.57,103641.61,387,3.3,12,1024,4831,200,6.7,Google Tensor G2,Silver,5G,12
+P0091,Vivo X200 Pro (Rose),Flagship,Vivo,84775.78,106792.76,235,4.2,16,256,4922,50,6.6,Snapdragon 865,Rose Gold,5G,12
+P0092,OnePlus 8T (Ocean),Premium,OnePlus,42025.39,53678.5,0,3.0,12,256,4279,48,6.5,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0093,Oppo Find X7 (Silver),Flagship,Oppo,132086.65,157219.52,119,4.7,12,1024,5209,200,6.8,Dimensity 9400,Silver,5G,12
+P0094,iPhone 12 (Silver),Premium,Apple,47588.5,52855.4,336,4.8,8,128,4993,48,6.5,Apple A11 Bionic,Silver,5G,12
+P0095,Realme 12 Pro+ (Cream),Mid-Range,Realme,32669.23,38707.09,131,5.0,8,128,5099,50,6.5,Dimensity 8350,Cream White,5G,12
+P0096,Pixel 9 (Graphite),Mid-Range,Google,17660.87,22339.0,369,3.3,8,128,4955,64,6.6,Google Tensor,Graphite,5G,12
+P0097,iPhone 12 Pro Max (Graphite),Flagship,Apple,121995.98,154638.85,288,4.5,16,512,4677,50,6.5,Apple A18,Graphite,5G,12
+P0098,POCO F4 (Silver),Gaming,Xiaomi,35645.9,41965.14,258,4.9,8,256,5952,64,6.8,Snapdragon 660,Silver,5G,12
+P0099,Xiaomi 13 (Silver),Flagship,Xiaomi,85459.53,105512.4,237,4.0,16,1024,4521,108,6.8,Snapdragon 8 Gen 1,Silver,5G,24
+P0100,Redmi Note 12 Pro+ (Midnight),Mid-Range,Xiaomi,16309.52,19227.75,72,4.9,6,256,4655,50,6.6,Dimensity 9400,Midnight Black,5G,12
+P0101,Oppo Reno13 Pro (Forest),Premium,Oppo,57975.32,63852.38,178,3.7,8,128,4309,48,6.7,Dimensity 8350,Forest Green,5G,12
+P0102,POCO X5 Pro (Silver),Gaming,Xiaomi,33925.06,40793.79,161,4.3,12,512,5331,50,6.9,Snapdragon 8 Elite,Silver,5G,12
+P0103,Realme GT 6 (Silver),Flagship,Realme,80055.48,97508.96,19,3.7,12,512,4738,108,6.6,MediaTek Helio P70,Silver,5G,12
+P0104,Realme 14 Pro+ (Forest),Mid-Range,Realme,18867.03,23320.97,321,4.4,6,128,4664,48,6.5,Snapdragon 665,Forest Green,5G,12
+P0105,OnePlus 9 (Ocean),Premium,OnePlus,55887.82,66494.87,184,3.0,12,128,4681,64,6.8,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0106,Vivo T4 (Cream),Budget,Vivo,12201.8,13868.57,206,4.1,6,128,4452,13,6.6,Snapdragon 675,Cream White,5G,12
+P0107,Xiaomi 14 (Graphite),Flagship,Xiaomi,64155.78,78140.54,267,4.1,12,1024,5406,108,6.9,Snapdragon 7s Gen 3,Graphite,5G,12
+P0108,Pixel 9a (Silver),Mid-Range,Google,20691.68,24493.79,391,4.3,6,256,4609,64,6.6,Google Tensor G5,Silver,5G,12
+P0109,Moto G60 (Rose),Mid-Range,Motorola,27390.76,33158.8,227,4.6,6,128,4984,48,6.6,Dimensity 7300,Rose Gold,5G,12
+P0110,Oppo Find X8 (Lavender),Flagship,Oppo,105378.22,120907.95,131,4.4,12,1024,4789,108,6.8,Dimensity 9400,Lavender,5G,12
+P0111,iPhone 13 (Midnight),Premium,Apple,37946.2,47105.94,230,4.7,12,256,4269,48,6.6,Apple A18,Midnight Black,5G,12
+P0112,iPhone 13 Pro Max (Lavender),Flagship,Apple,62982.24,74512.28,245,3.8,12,256,4685,50,6.9,Apple A14 Bionic,Lavender,5G,12
+P0113,Oppo A5 Pro (Rose),Mid-Range,Oppo,23355.46,28165.77,356,3.2,6,256,4506,64,6.5,Dimensity 8350,Rose Gold,5G,12
+P0114,Realme GT 7 (Lavender),Flagship,Realme,129205.38,156693.31,19,4.3,16,512,5058,200,6.8,Snapdragon 8s Elite,Lavender,5G,12
+P0115,Pixel 10 (Silver),Premium,Google,40201.95,47996.68,183,3.0,12,256,4320,48,6.7,Google Tensor G4,Silver,5G,12
+P0116,Realme GT Neo 7 (Silver),Gaming,Realme,37200.96,43795.75,109,3.8,12,512,5647,108,6.6,Dimensity 8350,Silver,5G,12
+P0117,Galaxy Note 20 Ultra (Lavender),Flagship,Samsung,116086.57,132355.55,275,4.0,12,1024,4802,108,6.6,Exynos 9810,Lavender,5G,12
+P0118,Moto Edge 30 Pro (Ocean),Premium,Motorola,41523.27,50800.4,0,4.1,12,256,4324,48,6.6,MediaTek Helio P35,Ocean Blue,5G,12
+P0119,Moto G82 (Midnight),Mid-Range,Motorola,26306.23,32915.37,202,4.2,6,256,5004,64,6.6,Snapdragon 665,Midnight Black,5G,12
+P0120,Oppo A5 (Forest),Budget,Oppo,9829.09,12409.38,83,4.4,4,128,4984,48,6.4,Dimensity 8350,Forest Green,5G,12
+P0121,Galaxy A51 (Cream),Budget,Samsung,14287.91,18063.95,315,4.9,6,128,4119,13,6.5,Snapdragon 8 Elite,Cream White,5G,12
+P0122,Moto Edge 40 Pro (Ocean),Premium,Motorola,42970.77,50116.83,260,3.6,8,256,4820,50,6.5,Snapdragon 8 Gen 1,Ocean Blue,5G,12
+P0123,Moto G84 5G (Lavender),Mid-Range,Motorola,22038.69,27198.5,373,4.1,8,128,4675,64,6.5,MediaTek Helio P35,Lavender,5G,24
+P0124,iPhone SE (3rd Gen) (Silver),Budget,Apple,13590.39,15161.87,341,5.0,4,128,4457,50,6.4,Apple A13 Bionic,Silver,4G,24
+P0125,Realme Narzo 80 (Forest),Budget,Realme,10476.85,12929.88,279,3.8,6,64,4251,48,6.6,Snapdragon 665,Forest Green,5G,12
+P0126,OnePlus 9 Pro (Forest),Flagship,OnePlus,71136.58,85523.52,258,3.3,12,512,4809,200,6.9,Snapdragon 835,Forest Green,5G,24
+P0127,Realme C75 (Sunrise),Budget,Realme,13683.11,17356.07,96,3.7,4,64,4106,13,6.5,Snapdragon 8s Elite,Sunrise Orange,5G,12
+P0128,Realme 1 (Ocean),Budget,Realme,8845.33,10906.95,172,4.7,6,128,4562,48,6.5,Snapdragon 8s Elite,Ocean Blue,5G,12
+P0129,Realme 2 Pro (Titanium),Budget,Realme,15156.23,18256.26,104,5.0,4,128,4102,48,6.4,MediaTek Helio P70,Titanium Gray,4G,12
+P0130,Galaxy S21 Ultra (Rose),Flagship,Samsung,68079.47,75118.52,325,3.7,16,256,5132,108,6.9,Snapdragon 845,Rose Gold,5G,12
+P0131,OnePlus Nord 2 (Lavender),Mid-Range,OnePlus,28422.66,35220.38,185,5.0,6,256,4570,50,6.7,Snapdragon 8s Gen 4,Lavender,5G,12
+P0132,Redmi Note 13 Pro+ (Forest),Mid-Range,Xiaomi,24582.21,28783.72,319,4.5,8,256,4571,50,6.6,Snapdragon 8 Gen 1,Forest Green,5G,12
+P0133,OnePlus 10 Pro (Titanium),Flagship,OnePlus,95449.02,119094.43,101,4.4,12,1024,4903,200,6.7,Dimensity 8350,Titanium Gray,5G,12
+P0134,Oppo F9 (Ocean),Mid-Range,Oppo,34308.18,37903.36,39,4.6,8,128,4541,64,6.6,Snapdragon 865,Ocean Blue,5G,12
+P0135,iPhone 14 (Cream),Premium,Apple,40565.48,47611.3,97,3.9,12,128,4582,48,6.7,Apple A17 Pro,Cream White,5G,12
+P0136,Moto Edge 50 Pro (Forest),Premium,Motorola,35913.65,45015.32,251,3.2,12,256,4239,48,6.7,Snapdragon 8 Gen 1,Forest Green,5G,12
+P0137,POCO X6 Pro (Rose),Gaming,Xiaomi,26649.13,31208.87,209,3.7,12,256,5057,108,6.7,Dimensity 9400,Rose Gold,5G,12
+P0138,Moto Razr 40 (Cream),Premium,Motorola,38139.34,44264.69,89,3.7,8,128,4976,50,6.7,Dimensity 7300,Cream White,5G,12
+P0139,Xiaomi 15 Ultra (Sunrise),Flagship,Xiaomi,83396.36,95238.24,15,3.2,16,1024,4678,200,6.9,Snapdragon 660,Sunrise Orange,5G,24
+P0140,OnePlus 10R (Titanium),Gaming,OnePlus,26831.78,29877.28,224,4.7,12,256,5518,50,6.9,Snapdragon 8s Gen 4,Titanium Gray,5G,12
+P0141,Nothing Phone (1) (Rose),Premium,Nothing,54886.51,65974.97,368,4.5,8,256,4768,64,6.7,Snapdragon 8s Gen 4,Rose Gold,5G,12
+P0142,Xiaomi 15 (Graphite),Premium,Xiaomi,51264.1,64934.19,223,4.1,8,128,4932,64,6.5,Snapdragon 8 Gen 1,Graphite,5G,12
+P0143,Moto G95 5G (Lavender),Mid-Range,Motorola,26009.2,28879.43,398,4.7,6,256,5037,48,6.6,MediaTek Helio P35,Lavender,5G,12
+P0144,Realme X (Forest),Mid-Range,Realme,27741.75,31974.0,242,4.4,8,128,4617,64,6.5,Dimensity 8350,Forest Green,5G,12
+P0145,Vivo Y300 (Sunrise),Mid-Range,Vivo,24599.96,30376.33,314,3.5,8,128,4861,64,6.6,Snapdragon 720G,Sunrise Orange,5G,12
+P0146,Moto Edge 60 Pro (Cream),Premium,Motorola,42905.52,51855.89,296,3.5,8,256,4605,48,6.8,Snapdragon 665,Cream White,5G,12
+P0147,Realme 5 Pro (Ocean),Budget,Realme,10091.67,11915.14,9,3.9,4,64,4780,13,6.6,Snapdragon 8s Elite,Ocean Blue,5G,12
+P0148,Vivo Y29 (Sunrise),Budget,Vivo,15895.67,18490.87,399,3.1,4,64,4185,48,6.5,Snapdragon 7 Gen 4,Sunrise Orange,4G,12
+P0149,Vivo V9 (Sunrise),Mid-Range,Vivo,21241.17,23805.86,285,4.6,8,256,4589,64,6.6,Snapdragon 7 Gen 4,Sunrise Orange,5G,12
+P0150,Realme X2 Pro (Midnight),Premium,Realme,36573.06,43332.09,151,4.8,12,128,4665,48,6.6,Snapdragon 8s Elite,Midnight Black,5G,12
+P0151,iPhone 14 Pro Max (Forest),Flagship,Apple,108304.27,128719.63,339,3.8,16,512,5326,200,6.7,Apple A19 Pro,Forest Green,5G,12
+P0152,Galaxy A32 (Lavender),Budget,Samsung,10202.17,12568.87,334,4.5,6,64,4613,50,6.6,Exynos 2500,Lavender,5G,12
+P0153,Pixel 10 Pro (Midnight),Flagship,Google,101512.21,124688.05,43,3.5,16,1024,4556,108,6.7,Snapdragon 765G,Midnight Black,5G,12
+P0154,Galaxy S22 Ultra (Graphite),Flagship,Samsung,66925.69,82594.56,164,3.8,12,1024,4518,50,6.6,Exynos 9810,Graphite,5G,12
+P0155,Realme 6 Pro (Titanium),Mid-Range,Realme,21395.07,24340.03,254,4.0,6,256,4845,64,6.6,Dimensity 8350,Titanium Gray,5G,12
+P0156,Galaxy A53 5G (Sunrise),Mid-Range,Samsung,24490.1,28979.02,387,4.0,6,128,4790,50,6.5,Exynos 2500,Sunrise Orange,5G,12
+P0157,Realme X7 Pro (Silver),Premium,Realme,44765.88,50111.94,0,4.8,12,128,4908,50,6.8,MediaTek Helio P70,Silver,5G,12
+P0158,Vivo V15 Pro (Forest),Mid-Range,Vivo,16973.02,19966.97,90,3.5,6,256,4955,50,6.7,Snapdragon 865,Forest Green,5G,24
+P0159,Galaxy S23 Ultra (Midnight),Flagship,Samsung,59017.61,73917.29,362,3.8,16,1024,5279,200,6.8,Exynos 2200,Midnight Black,5G,12
+P0160,Redmi Note 14 Pro+ (Titanium),Mid-Range,Xiaomi,20465.51,22999.85,252,3.5,8,256,5155,64,6.6,Snapdragon 8 Gen 1,Titanium Gray,5G,12
+P0161,Galaxy Z Fold5 (Forest),Flagship,Samsung,129229.74,153183.21,263,3.0,16,512,4677,200,6.9,Snapdragon 845,Forest Green,5G,12
+P0162,Oppo Reno 2 (Silver),Mid-Range,Oppo,24599.5,28752.78,92,4.4,6,128,5166,50,6.5,Dimensity 8350,Silver,5G,24
+P0163,Vivo V17 (Lavender),Mid-Range,Vivo,19000.35,24233.1,85,5.0,6,256,5005,50,6.6,Dimensity 8350,Lavender,5G,24
+P0164,Oppo Find X2 (Lavender),Flagship,Oppo,70277.78,83027.08,325,3.6,16,1024,4655,200,6.8,Dimensity 8350,Lavender,5G,12
+P0165,Galaxy A54 5G (Cream),Mid-Range,Samsung,24946.96,29929.21,134,3.1,8,256,4688,48,6.6,Snapdragon 8 Elite,Cream White,5G,12
+P0166,Nothing Phone (2) (Forest),Premium,Nothing,48967.71,61577.77,224,4.6,12,256,4279,50,6.6,Dimensity 7300 Pro,Forest Green,5G,12
+P0167,Vivo X50 (Titanium),Premium,Vivo,42869.59,52185.86,141,4.3,12,128,4546,50,6.5,Snapdragon 720G,Titanium Gray,5G,24
+P0168,Realme 8 Pro (Forest),Mid-Range,Realme,33558.06,37905.39,96,3.0,6,256,4554,48,6.6,Dimensity 8350,Forest Green,5G,12
+P0169,Oppo Reno 4 (Ocean),Mid-Range,Oppo,33209.6,38098.51,175,3.5,6,128,5029,50,6.7,Snapdragon 6 Gen 4,Ocean Blue,5G,12
+P0170,Oppo Find X3 Pro (Sunrise),Flagship,Oppo,75545.62,92823.06,184,3.4,16,256,5465,108,6.6,Snapdragon 865,Sunrise Orange,5G,12
+P0171,Vivo V20 (Cream),Mid-Range,Vivo,19061.39,24215.93,397,3.0,6,256,4629,64,6.6,Dimensity 8350,Cream White,5G,12
+P0172,OnePlus 11 (Titanium),Flagship,OnePlus,59054.82,73298.23,0,3.2,16,512,5302,50,6.5,Snapdragon 835,Titanium Gray,5G,12
+P0173,Realme GT (Cream),Flagship,Realme,128238.6,145500.51,368,3.1,12,1024,4517,50,6.9,Snapdragon 8s Elite,Cream White,5G,12
+P0174,Vivo X60 Pro (Midnight),Flagship,Vivo,119209.37,145776.66,248,4.1,12,1024,5330,108,6.5,Snapdragon 720G,Midnight Black,5G,12
+P0175,iPhone 15 (Sunrise),Premium,Apple,43426.24,53923.98,126,4.5,8,128,4816,50,6.7,Apple A15 Bionic,Sunrise Orange,5G,12
+P0176,Redmi 14C (Lavender),Budget,Xiaomi,13283.69,16780.08,103,3.3,6,128,4016,48,6.6,Dimensity 9400,Lavender,4G,12
+P0177,POCO X7 Pro (Cream),Gaming,Xiaomi,24556.46,30819.97,172,3.5,8,512,5460,64,6.8,Snapdragon 8 Gen 1,Cream White,5G,24
+P0178,OnePlus Nord 3 (Forest),Mid-Range,OnePlus,28654.86,34327.95,52,4.3,6,256,5001,50,6.6,Snapdragon 8 Elite,Forest Green,5G,24
+P0179,Oppo Reno 6 (Graphite),Mid-Range,Oppo,27057.23,34539.74,215,3.2,8,256,5147,48,6.7,Snapdragon 660,Graphite,5G,12
+P0180,Nothing Phone (2a) (Forest),Mid-Range,Nothing,29948.74,37224.96,290,5.0,6,256,4790,64,6.7,Snapdragon 8s Gen 4,Forest Green,5G,12
+P0181,Nothing Phone (3) (Graphite),Premium,Nothing,55525.24,62687.95,350,4.9,8,128,4336,64,6.5,Snapdragon 8s Gen 4,Graphite,5G,12
+P0182,Vivo V21 (Sunrise),Mid-Range,Vivo,29025.19,35585.65,33,4.8,6,128,4886,48,6.5,Snapdragon 7 Gen 4,Sunrise Orange,5G,12
+P0183,POCO F7 (Cream),Gaming,Xiaomi,23532.92,28393.52,272,3.2,12,128,5873,64,6.8,Snapdragon 855,Cream White,5G,12
+P0184,Mi 8 (Sunrise),Mid-Range,Xiaomi,29368.74,33636.0,237,3.4,6,128,4828,64,6.6,Snapdragon 7s Gen 3,Sunrise Orange,5G,12
+P0185,Oppo Find X5 Pro (Cream),Flagship,Oppo,62170.42,70357.52,71,4.2,16,256,4745,200,6.7,Snapdragon 6 Gen 4,Cream White,5G,12
+P0186,Galaxy S24 Ultra (Midnight),Flagship,Samsung,118554.21,130683.95,339,3.6,16,1024,5014,200,6.9,Snapdragon 8 Elite,Midnight Black,5G,12
+P0187,Pixel 3 (Ocean),Premium,Google,48560.27,59839.9,93,3.7,12,256,4640,50,6.5,Google Tensor,Ocean Blue,5G,12
+P0188,Galaxy S24+ (Cream),Flagship,Samsung,121186.32,141842.7,303,4.8,12,1024,5230,108,6.8,Snapdragon 845,Cream White,5G,24
+P0189,iPhone 15 Pro Max (Cream),Flagship,Apple,90629.3,101085.9,89,4.4,12,1024,5246,50,6.7,Apple A12 Bionic,Cream White,5G,12
+P0190,Realme 9 Pro+ (Midnight),Mid-Range,Realme,18998.1,20955.74,114,4.8,8,256,4945,48,6.6,Snapdragon 8s Elite,Midnight Black,5G,12
+P0191,Nothing Phone (3a) (Graphite),Mid-Range,Nothing,18841.32,23952.94,238,3.2,8,256,4795,64,6.5,Snapdragon 8s Gen 4,Graphite,5G,12
+P0192,iPhone 16 (Titanium),Premium,Apple,42474.08,51801.71,0,3.9,8,256,4865,64,6.5,Apple A16 Bionic,Titanium Gray,5G,12
+P0193,Moto Razr 60 (Midnight),Premium,Motorola,37756.07,44424.43,286,4.7,12,256,4776,50,6.5,Snapdragon 632,Midnight Black,5G,12
+P0194,Pixel 3a (Graphite),Budget,Google,9195.86,11601.88,2,4.7,6,64,4071,48,6.5,Google Tensor G5,Graphite,5G,12
+P0195,Oppo Reno 8 (Ocean),Mid-Range,Oppo,28495.97,32186.07,104,4.0,6,128,5111,48,6.6,MediaTek Helio P70,Ocean Blue,5G,12
+P0196,OnePlus 12 (Ocean),Flagship,OnePlus,119099.08,148268.57,91,4.3,12,1024,5216,50,6.5,Dimensity 8350,Ocean Blue,5G,12
+P0197,Redmi Note 7 Pro (Silver),Budget,Xiaomi,16784.76,18757.75,176,4.5,6,64,4678,50,6.4,Snapdragon 855,Silver,5G,12
+P0198,iPhone 16 Pro Max (Titanium),Flagship,Apple,99532.69,126265.3,213,4.3,12,1024,5139,50,6.8,Apple A19 Pro,Titanium Gray,5G,12
+P0199,Pixel 4 (Forest),Premium,Google,43465.35,52333.51,229,3.7,8,128,4623,50,6.4,Google Tensor,Forest Green,5G,12
+P0200,Vivo X70 Pro (Silver),Flagship,Vivo,72089.94,91167.85,268,3.1,12,1024,5350,108,6.7,Snapdragon 7 Gen 4,Silver,5G,24
+P0201,Moto G45 5G (Lavender),Budget,Motorola,14382.16,18014.94,193,4.4,4,64,4913,50,6.6,MediaTek Helio P35,Lavender,5G,12
+P0202,Mi 9 (Titanium),Premium,Xiaomi,49629.88,60594.62,114,3.1,8,256,4496,50,6.6,Dimensity 9400,Titanium Gray,5G,12
+P0203,OnePlus 12R (Cream),Gaming,OnePlus,25977.93,32331.49,1,4.8,16,256,5733,108,6.7,Snapdragon 855,Cream White,5G,12
+P0204,Nothing Phone (1) (Graphite),Premium,Nothing,47774.6,53007.74,154,4.6,12,256,4509,48,6.4,Dimensity 7300 Pro,Graphite,5G,12
+P0205,Vivo V23 (Silver),Mid-Range,Vivo,26550.96,31252.91,2,4.1,8,256,4534,50,6.6,Dimensity 8350,Silver,5G,12
+P0206,Moto G6 (Midnight),Budget,Motorola,16113.35,18057.65,282,4.6,6,64,4807,13,6.6,Snapdragon 7 Gen 4,Midnight Black,5G,12
+P0207,Pixel 4a (Silver),Budget,Google,15725.41,18972.67,258,3.9,4,128,4464,50,6.5,Snapdragon 765G,Silver,5G,12
+P0208,Galaxy A55 5G (Forest),Mid-Range,Samsung,24738.71,29845.39,195,3.4,6,128,4898,64,6.6,Exynos 2500,Forest Green,5G,12
+P0209,Nothing Phone (2) (Ocean),Premium,Nothing,51279.76,59024.8,188,3.1,12,128,4323,48,6.7,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0210,Moto G7 Power (Midnight),Budget,Motorola,9968.58,11112.5,270,3.8,4,128,4122,50,6.4,Dimensity 7300,Midnight Black,5G,12
+P0211,iPhone 16e (Titanium),Mid-Range,Apple,18197.46,21336.97,309,4.1,6,128,4533,64,6.5,Apple A19,Titanium Gray,5G,12
+P0212,Nothing Phone (2a) (Lavender),Mid-Range,Nothing,23163.34,29435.88,102,4.3,6,128,5122,48,6.5,Snapdragon 8+ Gen 1,Lavender,5G,12
+P0213,Oppo Find X6 Pro (Silver),Flagship,Oppo,100117.82,124883.96,376,4.4,16,512,4879,108,6.9,Snapdragon 660,Silver,5G,12
+P0214,Redmi Note 8 Pro (Titanium),Budget,Xiaomi,10433.18,13117.21,86,3.7,6,64,4039,48,6.4,Snapdragon 7s Gen 3,Titanium Gray,5G,12
+P0215,Vivo X80 Pro (Forest),Flagship,Vivo,66452.17,78869.26,272,3.4,12,512,4872,108,6.7,Snapdragon 7 Gen 4,Forest Green,5G,12
+P0216,Galaxy S25 Ultra (Forest),Flagship,Samsung,62235.24,75382.9,258,3.2,16,1024,5396,108,6.6,Snapdragon 8 Elite,Forest Green,5G,12
+P0217,Realme GT Neo 3 (Ocean),Gaming,Realme,29049.2,34330.1,27,4.9,12,128,5601,64,6.8,Snapdragon 5 Gen 1,Ocean Blue,5G,12
+P0218,Mi 10 (Cream),Premium,Xiaomi,39418.29,44316.22,135,4.1,8,128,4466,64,6.7,Snapdragon 855,Cream White,5G,12
+P0219,OnePlus Nord 4 (Forest),Mid-Range,OnePlus,23807.6,27326.75,365,4.1,6,128,4724,50,6.6,Snapdragon 835,Forest Green,5G,12
+P0220,Nothing Phone (3) (Rose),Premium,Nothing,56605.89,69186.26,0,3.0,12,128,4653,48,6.6,Dimensity 7300 Pro,Rose Gold,5G,12
+P0221,iPhone 17 (Graphite),Premium,Apple,49295.18,58469.52,50,3.4,12,256,4465,48,6.7,Apple A15 Bionic,Graphite,5G,12
+P0222,Moto One Vision (Forest),Mid-Range,Motorola,16465.37,19337.35,110,4.7,8,128,4524,64,6.5,MediaTek Helio P35,Forest Green,5G,12
+P0223,Moto G8 Power (Rose),Budget,Motorola,13479.38,15272.14,65,4.3,6,128,4296,13,6.4,Snapdragon 7 Gen 4,Rose Gold,5G,12
+P0224,Oppo Reno10 Pro (Sunrise),Premium,Oppo,49018.7,56367.45,95,4.1,12,256,4840,64,6.6,MediaTek Helio P70,Sunrise Orange,5G,12
+P0225,Nothing Phone (3a) (Lavender),Mid-Range,Nothing,20983.81,26386.3,148,3.9,6,128,4984,50,6.5,Dimensity 7300 Pro,Lavender,5G,12
+P0226,Oppo Find X7 (Forest),Flagship,Oppo,132731.77,153837.98,0,4.5,16,512,4664,50,6.7,Snapdragon 660,Forest Green,5G,12
+P0227,iPhone 17 Pro Max (Cream),Flagship,Apple,67547.86,74877.2,183,4.7,12,1024,4709,200,6.7,Apple A11 Bionic,Cream White,5G,24
+P0228,OnePlus 13 (Rose),Flagship,OnePlus,81321.48,93507.82,0,4.2,12,256,5104,108,6.6,Dimensity 8350,Rose Gold,5G,12
+P0229,iPhone 17 Pro (Midnight),Flagship,Apple,72627.55,80481.73,146,4.4,16,1024,5441,50,6.6,Apple A15 Bionic,Midnight Black,5G,12
+P0230,Pixel 5 (Forest),Premium,Google,43405.03,55326.31,193,3.1,8,256,4336,48,6.5,Google Tensor,Forest Green,5G,12
+P0231,Vivo V25 (Graphite),Mid-Range,Vivo,33834.82,37540.12,146,4.5,6,256,4953,48,6.5,Snapdragon 7 Gen 4,Graphite,5G,12
+P0232,Moto Edge (Silver),Premium,Motorola,59316.4,66430.09,0,4.2,12,128,4412,64,6.7,Snapdragon 632,Silver,5G,12
+P0233,Oppo Reno13 Pro (Ocean),Premium,Oppo,50692.05,63681.62,172,4.3,12,256,4608,48,6.5,Dimensity 9400,Ocean Blue,5G,12
+P0234,Redmi Note 9 Pro (Lavender),Budget,Xiaomi,9549.92,11948.17,189,4.5,4,64,4962,50,6.5,Snapdragon 7s Gen 3,Lavender,5G,12
+P0235,Nothing Phone (1) (Midnight),Premium,Nothing,55597.28,61446.94,23,3.1,8,128,4686,48,6.6,Snapdragon 8s Gen 4,Midnight Black,5G,12
+P0236,Nothing Phone (2) (Rose),Premium,Nothing,44195.39,52454.2,84,3.4,12,128,4734,48,6.7,Snapdragon 8+ Gen 1,Rose Gold,5G,12
+P0237,Realme 10 Pro+ (Sunrise),Mid-Range,Realme,24956.61,31921.1,331,3.7,8,256,5179,64,6.5,Snapdragon 8s Elite,Sunrise Orange,5G,12
+P0238,Vivo X90 Pro (Midnight),Flagship,Vivo,137077.49,159195.0,213,4.0,12,256,5022,200,6.5,Dimensity 8350,Midnight Black,5G,12
+P0239,Nothing Phone (2a) (Forest),Mid-Range,Nothing,34169.88,39149.39,144,4.7,6,256,5064,64,6.6,Dimensity 7300 Pro,Forest Green,5G,12
+P0240,Pixel 6 (Graphite),Premium,Google,51459.98,59625.27,44,4.9,8,128,4677,64,6.8,Google Tensor G5,Graphite,5G,12
+P0241,Galaxy S25+ (Forest),Flagship,Samsung,78615.22,93967.71,174,3.3,16,512,5492,200,6.8,Snapdragon 8 Gen 2,Forest Green,5G,12
+P0242,Moto G9 Power (Midnight),Budget,Motorola,14093.93,16305.81,146,3.1,6,128,4324,50,6.4,Snapdragon 8 Gen 1,Midnight Black,5G,12
+P0243,OnePlus 13R (Ocean),Premium,OnePlus,34427.52,41353.48,190,3.1,12,256,4251,64,6.5,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0244,OnePlus Nord CE5 (Ocean),Mid-Range,OnePlus,30406.11,38096.27,392,3.2,6,256,4572,48,6.6,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0245,Nothing Phone (3) (Lavender),Premium,Nothing,50372.51,58577.4,305,4.9,12,128,4433,50,6.8,Dimensity 7300 Pro,Lavender,5G,12
+P0246,Nothing Phone (3a) (Sunrise),Mid-Range,Nothing,28394.71,34839.66,155,3.3,6,256,5077,48,6.6,Snapdragon 8+ Gen 1,Sunrise Orange,5G,12
+P0247,Moto Edge 20 (Midnight),Premium,Motorola,42163.6,49308.34,75,3.8,12,256,4451,64,6.6,Snapdragon 7 Gen 4,Midnight Black,5G,12
+P0248,Oppo Find X8 (Midnight),Flagship,Oppo,111131.1,122319.05,334,4.2,12,512,5047,108,6.7,Snapdragon 865,Midnight Black,5G,12
+P0249,Galaxy S25 (Forest),Premium,Samsung,47916.64,53649.69,143,4.8,12,256,4603,48,6.5,Snapdragon 7 Gen 4,Forest Green,5G,12
+P0250,Oppo A5 Pro (Graphite),Mid-Range,Oppo,31250.88,39435.35,99,3.8,8,256,4718,48,6.7,MediaTek Helio P70,Graphite,5G,12
+P0251,Vivo V29 (Ocean),Premium,Vivo,49352.22,57261.51,235,3.5,8,128,4688,50,6.5,Snapdragon 865,Ocean Blue,5G,12
+P0252,Moto G60 (Cream),Mid-Range,Motorola,31112.86,39419.93,222,4.3,8,128,4701,64,6.5,Snapdragon 8 Gen 1,Cream White,5G,12
+P0253,Galaxy Z Fold7 (Graphite),Flagship,Samsung,107759.06,118749.63,152,4.1,12,512,4613,108,6.8,Snapdragon 8 Gen 2,Graphite,5G,12
+P0254,Nothing Phone (1) (Forest),Premium,Nothing,49026.01,55704.65,210,4.3,8,128,4429,48,6.6,Snapdragon 8+ Gen 1,Forest Green,5G,12
+P0255,Oppo A5 (Ocean),Budget,Oppo,7327.97,8872.43,0,4.5,4,64,4325,50,6.6,Snapdragon 865,Ocean Blue,4G,12
+P0256,Realme GT Neo 5 (Cream),Gaming,Realme,22608.68,26569.16,0,4.8,8,512,5389,108,6.6,Snapdragon 8s Elite,Cream White,5G,12
+P0257,Moto Edge 30 Pro (Silver),Premium,Motorola,35932.67,42322.02,0,4.4,12,256,4430,48,6.7,Snapdragon 632,Silver,5G,12
+P0258,Moto G82 (Midnight),Mid-Range,Motorola,23205.1,26324.26,28,3.1,8,256,5090,50,6.6,Snapdragon 632,Midnight Black,5G,12
+P0259,Pixel 6 Pro (Sunrise),Flagship,Google,114846.15,143454.37,54,3.2,16,512,5177,200,6.8,Google Tensor G4,Sunrise Orange,5G,24
+P0260,Vivo X100 Pro (Cream),Flagship,Vivo,138686.03,157673.85,3,3.3,16,256,4534,50,6.5,Snapdragon 675,Cream White,5G,12
+P0261,Nothing Phone (2) (Graphite),Premium,Nothing,54232.43,68572.48,168,3.0,12,256,4843,50,6.7,Snapdragon 8s Gen 4,Graphite,5G,12
+P0262,iPhone 17 Air (Titanium),Premium,Apple,38641.84,48869.43,217,3.9,12,128,4694,64,6.4,Apple A11 Bionic,Titanium Gray,5G,24
+P0263,Vivo V40 (Sunrise),Premium,Vivo,46402.22,52373.81,24,3.7,8,256,4215,50,6.4,Snapdragon 7 Gen 4,Sunrise Orange,5G,24
+P0264,Galaxy Z Flip7 (Sunrise),Premium,Samsung,46342.2,51679.87,160,4.1,12,256,4470,50,6.5,Exynos 2500,Sunrise Orange,5G,12
+P0265,Pixel 7 (Midnight),Premium,Google,56440.36,64406.04,20,4.3,12,256,4788,48,6.4,Snapdragon 765G,Midnight Black,5G,12
+P0266,Galaxy A56 5G (Ocean),Mid-Range,Samsung,18326.16,21986.55,188,4.6,8,128,4821,50,6.6,Exynos 2200,Ocean Blue,5G,12
+P0267,Moto Edge 40 Pro (Titanium),Premium,Motorola,36617.41,46504.75,212,3.0,12,256,4502,50,6.5,Snapdragon 7 Gen 4,Titanium Gray,5G,12
+P0268,Nothing Phone (2a) (Graphite),Mid-Range,Nothing,15555.23,19530.11,169,3.3,6,256,4633,50,6.5,Snapdragon 8s Gen 4,Graphite,5G,12
+P0269,Vivo X200 Pro (Graphite),Flagship,Vivo,95689.19,121254.5,264,4.1,12,256,4824,108,6.9,Snapdragon 720G,Graphite,5G,12
+P0270,Realme 12 Pro+ (Lavender),Mid-Range,Realme,21502.52,24267.92,28,3.4,6,256,5173,48,6.7,Snapdragon 665,Lavender,5G,12
+P0271,Realme GT 6 (Forest),Flagship,Realme,67169.62,75236.85,178,3.1,16,1024,4971,50,6.6,Snapdragon 665,Forest Green,5G,12
+P0272,iPhone SE (4th Gen) (Lavender),Budget,Apple,12662.34,14539.67,284,3.3,6,128,4257,48,6.5,Apple A16 Bionic,Lavender,5G,12
+P0273,Mi 11 (Sunrise),Flagship,Xiaomi,80007.18,96681.38,307,5.0,12,256,4505,108,6.9,Snapdragon 855,Sunrise Orange,5G,12
+P0274,OnePlus 5T (Rose),Mid-Range,OnePlus,20790.28,25377.43,301,3.4,8,128,4733,50,6.6,Snapdragon 855,Rose Gold,5G,12
+P0275,Nothing Phone (3) (Cream),Premium,Nothing,37216.06,45738.62,92,3.1,8,128,4293,48,6.8,Snapdragon 8s Gen 4,Cream White,5G,12
+P0276,Redmi Note 10 Pro (Cream),Mid-Range,Xiaomi,32245.69,37725.95,42,3.9,6,128,5099,50,6.5,Dimensity 9400,Cream White,5G,24
+P0277,Galaxy A36 5G (Midnight),Mid-Range,Samsung,19371.06,21765.08,13,3.6,8,256,4538,48,6.7,Snapdragon 7 Gen 4,Midnight Black,5G,12
+P0278,Vivo T4 (Cream),Budget,Vivo,12114.92,15263.9,142,4.4,6,64,4844,50,6.6,Snapdragon 720G,Cream White,5G,12
+P0279,Oppo F9 (Forest),Mid-Range,Oppo,18128.75,21733.49,187,4.6,6,256,4545,50,6.6,Dimensity 9400,Forest Green,5G,12
+P0280,Realme 14 Pro+ (Cream),Mid-Range,Realme,28694.73,32563.64,31,3.5,8,256,5114,48,6.5,Snapdragon 665,Cream White,5G,24
+P0281,iPhone X (Ocean),Premium,Apple,54179.8,69175.78,266,3.8,12,256,4618,50,6.7,Apple A19 Pro,Ocean Blue,5G,12
+P0282,Pixel 7 Pro (Ocean),Flagship,Google,73402.53,91208.38,239,4.6,16,512,4748,200,6.5,Google Tensor G2,Ocean Blue,5G,12
+P0283,Nothing Phone (3a) (Lavender),Mid-Range,Nothing,35822.31,39794.85,117,3.0,6,128,4842,50,6.6,Snapdragon 8s Gen 4,Lavender,5G,12
+P0284,iPhone XR (Lavender),Mid-Range,Apple,20656.08,24420.18,390,4.5,8,256,4869,64,6.6,Apple A11 Bionic,Lavender,5G,12
+P0285,Xiaomi 12 (Graphite),Flagship,Xiaomi,114981.13,142325.44,305,4.6,12,256,4670,50,6.6,Snapdragon 660,Graphite,5G,12
+P0286,iPhone XS (Titanium),Premium,Apple,45197.58,51045.35,13,3.4,8,128,4264,64,6.6,Apple A18,Titanium Gray,5G,12
+P0287,Oppo Reno 2 (Midnight),Mid-Range,Oppo,24753.44,31616.54,5,4.6,8,128,4889,50,6.6,Dimensity 8350,Midnight Black,5G,24
+P0288,Redmi Note 11 Pro+ (Lavender),Mid-Range,Xiaomi,32733.58,37853.51,78,4.1,8,256,5189,48,6.6,Snapdragon 7s Gen 3,Lavender,5G,12
+P0289,Realme GT 7 (Forest),Flagship,Realme,117884.87,149838.87,0,3.6,12,256,5078,200,6.5,Dimensity 8350,Forest Green,5G,24
+P0290,POCO F4 (Sunrise),Gaming,Xiaomi,32938.16,42096.47,305,3.3,8,512,5663,64,6.8,Snapdragon 7s Gen 3,Sunrise Orange,5G,24
+P0291,Vivo Y300 (Cream),Mid-Range,Vivo,22400.15,25709.25,363,4.3,6,256,4947,48,6.6,Dimensity 9400,Cream White,5G,12
+P0292,Moto G84 5G (Ocean),Mid-Range,Motorola,17416.54,21668.02,253,4.5,8,128,5056,64,6.5,Snapdragon 665,Ocean Blue,5G,12
+P0293,Xiaomi 13 (Silver),Flagship,Xiaomi,81316.67,96703.93,296,3.9,16,1024,4927,108,6.8,Dimensity 9400,Silver,5G,24
+P0294,Pixel 8 (Graphite),Premium,Google,54288.41,61539.48,343,4.0,8,256,4696,64,6.8,Snapdragon 765G,Graphite,5G,12
+P0295,Moto Edge 50 Pro (Rose),Premium,Motorola,37343.27,43239.3,28,3.9,8,256,4800,50,6.4,Snapdragon 6s Gen 4,Rose Gold,5G,12
+P0296,Nothing Phone (1) (Sunrise),Premium,Nothing,56547.26,69009.13,78,3.8,8,128,4640,48,6.5,Snapdragon 8s Gen 4,Sunrise Orange,5G,12
+P0297,Redmi Note 12 Pro+ (Graphite),Mid-Range,Xiaomi,22978.38,27430.16,374,3.2,8,256,4703,50,6.7,Snapdragon 8 Elite,Graphite,5G,24
+P0298,Galaxy M56 5G (Forest),Budget,Samsung,10950.48,13924.89,204,4.3,6,128,4865,13,6.5,Exynos 9810,Forest Green,4G,12
+P0299,Vivo Y29 (Sunrise),Budget,Vivo,9512.71,11610.23,155,4.7,4,128,4929,48,6.5,Snapdragon 675,Sunrise Orange,4G,12
+P0300,Moto Razr 40 (Silver),Premium,Motorola,55440.39,68479.94,192,4.1,8,256,4369,64,6.5,Dimensity 7300,Silver,5G,12
+P0301,Pixel 8 Pro (Sunrise),Flagship,Google,76144.47,96097.55,202,4.1,12,256,5194,108,6.7,Google Tensor G2,Sunrise Orange,5G,12
+P0302,Vivo V9 (Rose),Mid-Range,Vivo,27461.03,32564.88,116,4.9,8,128,5128,48,6.6,Dimensity 8350,Rose Gold,5G,12
+P0303,Realme GT Neo 7 (Cream),Gaming,Realme,29753.12,36914.45,216,4.9,16,128,5149,50,6.8,Snapdragon 665,Cream White,5G,12
+P0304,Vivo V15 Pro (Graphite),Mid-Range,Vivo,31651.83,35501.01,254,3.2,6,256,4805,50,6.7,Snapdragon 720G,Graphite,5G,12
+P0305,Moto G95 5G (Rose),Mid-Range,Motorola,20652.3,23367.4,308,4.8,6,256,5124,64,6.6,MediaTek Helio P35,Rose Gold,5G,12
+P0306,POCO X5 Pro (Graphite),Gaming,Xiaomi,32058.64,40377.58,109,4.0,16,512,5113,50,6.7,Snapdragon 855,Graphite,5G,12
+P0307,Realme Narzo 80 (Midnight),Budget,Realme,11963.93,13245.09,9,4.6,6,128,4792,50,6.5,Snapdragon 5 Gen 1,Midnight Black,5G,12
+P0308,Xiaomi 14 (Graphite),Flagship,Xiaomi,97335.02,108731.9,0,4.3,12,512,5400,50,6.6,Snapdragon 7s Gen 3,Graphite,5G,12
+P0309,Moto Edge 60 Pro (Rose),Premium,Motorola,54404.5,65037.48,373,4.2,8,128,4329,48,6.7,Snapdragon 6s Gen 4,Rose Gold,5G,12
+P0310,iPhone 11 (Ocean),Mid-Range,Apple,19604.16,22151.38,60,3.1,8,128,4593,64,6.5,Apple A15 Bionic,Ocean Blue,5G,12
+P0311,Oppo Find X2 (Sunrise),Flagship,Oppo,65825.89,79265.28,0,3.2,16,512,4729,50,6.8,Snapdragon 865,Sunrise Orange,5G,12
+P0312,Galaxy F56 5G (Midnight),Budget,Samsung,13419.04,16889.32,303,4.7,6,64,4156,50,6.5,Exynos 2200,Midnight Black,5G,12
+P0313,iPhone 11 Pro Max (Graphite),Premium,Apple,56764.56,64701.52,0,3.8,12,256,4831,64,6.6,Apple A19 Pro,Graphite,5G,12
+P0314,iPhone SE (2nd Gen) (Graphite),Budget,Apple,9897.41,12003.28,129,4.0,4,128,4833,50,6.6,Apple A16 Bionic,Graphite,5G,12
+P0315,OnePlus 6T (Silver),Premium,OnePlus,49337.25,54647.02,106,3.2,8,256,4540,64,6.7,Snapdragon 8s Gen 4,Silver,5G,12
+P0316,Galaxy S8 (Sunrise),Mid-Range,Samsung,30504.95,36884.91,284,4.6,6,128,4652,48,6.6,Snapdragon 730,Sunrise Orange,5G,12
+P0317,iPhone 12 Mini (Lavender),Mid-Range,Apple,19944.21,25014.29,32,3.8,8,256,4724,64,6.6,Apple A18,Lavender,5G,12
+P0318,OnePlus 7 Pro (Cream),Flagship,OnePlus,84265.61,97665.59,296,4.8,12,512,4623,108,6.8,Snapdragon 855,Cream White,5G,12
+P0319,Moto Razr 60 (Midnight),Premium,Motorola,38279.32,48535.83,262,3.9,12,128,4873,64,6.4,Snapdragon 632,Midnight Black,5G,12
+P0320,iPhone 12 (Lavender),Premium,Apple,39220.39,44942.17,144,3.7,12,256,4488,64,6.5,Apple A19,Lavender,5G,12
+P0321,Realme C75 (Cream),Budget,Realme,6886.67,8447.31,86,3.5,6,128,4479,50,6.6,Snapdragon 5 Gen 1,Cream White,4G,12
+P0322,Pixel 9 (Midnight),Mid-Range,Google,32124.12,37294.38,112,3.8,8,128,4526,64,6.6,Google Tensor G2,Midnight Black,5G,24
+P0323,Redmi Note 13 Pro+ (Ocean),Mid-Range,Xiaomi,30192.83,35631.56,76,4.0,6,256,4654,48,6.5,Snapdragon 7s Gen 3,Ocean Blue,5G,12
+P0324,Nothing Phone (2) (Graphite),Premium,Nothing,51534.99,57042.06,290,3.5,8,256,4277,50,6.4,Snapdragon 8s Gen 4,Graphite,5G,12
+P0325,Pixel 9a (Titanium),Mid-Range,Google,15072.98,19267.29,20,4.7,6,128,5024,50,6.6,Google Tensor G2,Titanium Gray,5G,24
+P0326,Pixel 10 (Graphite),Premium,Google,52129.7,59275.09,96,3.8,8,128,4268,64,6.8,Snapdragon 765G,Graphite,5G,12
+P0327,POCO X6 Pro (Titanium),Gaming,Xiaomi,36146.55,41093.7,111,4.5,8,128,5723,108,6.7,Snapdragon 855,Titanium Gray,5G,12
+P0328,Realme 1 (Sunrise),Budget,Realme,7668.88,9197.35,152,4.3,4,128,4074,48,6.4,Snapdragon 8s Elite,Sunrise Orange,4G,12
+P0329,Vivo V17 (Cream),Mid-Range,Vivo,30623.05,36068.46,163,3.0,6,256,4683,64,6.6,Snapdragon 675,Cream White,5G,12
+P0330,Vivo X50 (Graphite),Premium,Vivo,38524.24,47655.19,382,4.2,12,128,4409,50,6.8,Snapdragon 865,Graphite,5G,12
+P0331,Vivo V20 (Rose),Mid-Range,Vivo,32004.24,39350.24,269,4.8,6,256,5107,48,6.6,Dimensity 9400,Rose Gold,5G,12
+P0332,Pixel 10 Pro (Titanium),Flagship,Google,84976.75,97003.9,55,4.9,12,512,5387,50,6.6,Google Tensor,Titanium Gray,5G,12
+P0333,Nothing Phone (2a) (Lavender),Mid-Range,Nothing,21196.28,26652.13,318,4.6,8,128,5158,48,6.6,Snapdragon 8+ Gen 1,Lavender,5G,12
+P0334,Xiaomi 15 Ultra (Graphite),Flagship,Xiaomi,93785.27,103860.95,189,4.3,16,512,5488,108,6.6,Snapdragon 7s Gen 3,Graphite,5G,12
+P0335,Galaxy S9+ (Rose),Mid-Range,Samsung,22930.13,27875.14,303,3.2,6,256,5048,64,6.6,Snapdragon 8 Gen 2,Rose Gold,5G,12
+P0336,Galaxy Note 9 (Rose),Premium,Samsung,48598.51,57124.84,398,3.7,12,128,4446,48,6.7,Exynos 2200,Rose Gold,5G,12
+P0337,Xiaomi 15 (Silver),Premium,Xiaomi,49049.72,60352.16,26,4.2,12,256,4914,64,6.8,Snapdragon 8 Elite,Silver,5G,12
+P0338,Galaxy S10+ (Lavender),Premium,Samsung,59394.44,65838.09,192,3.4,12,256,4237,50,6.5,Snapdragon 8 Elite,Lavender,5G,12
+P0339,Pixel 3 (Midnight),Premium,Google,59915.22,68493.69,30,3.7,12,256,4821,48,6.5,Google Tensor,Midnight Black,5G,12
+P0340,Redmi Note 14 Pro+ (Silver),Mid-Range,Xiaomi,28210.29,34497.9,11,3.3,8,128,4755,64,6.6,Snapdragon 8 Gen 1,Silver,5G,12
+P0341,Pixel 3a (Sunrise),Budget,Google,12239.87,14481.81,309,4.9,4,128,4583,48,6.4,Google Tensor,Sunrise Orange,5G,12
+P0342,Galaxy Note 10+ (Sunrise),Flagship,Samsung,67777.94,81343.52,0,4.5,16,512,4961,108,6.8,Exynos 2200,Sunrise Orange,5G,12
+P0343,Redmi 14C (Silver),Budget,Xiaomi,13956.21,17796.72,0,3.4,6,64,4915,48,6.5,Snapdragon 660,Silver,5G,24
+P0344,Vivo X60 Pro (Midnight),Flagship,Vivo,83761.14,94344.16,380,3.7,16,512,4860,50,6.5,Dimensity 9400,Midnight Black,5G,12
+P0345,OnePlus 7T (Forest),Premium,OnePlus,42529.99,52387.58,101,4.7,8,256,4521,48,6.6,Dimensity 8350,Forest Green,5G,12
+P0346,Pixel 4 (Lavender),Premium,Google,46576.47,54101.56,308,4.5,8,256,4792,50,6.8,Snapdragon 765G,Lavender,5G,12
+P0347,Vivo V21 (Graphite),Mid-Range,Vivo,17307.41,19676.68,208,3.8,8,256,4974,64,6.5,Dimensity 9400,Graphite,5G,12
+P0348,Vivo X70 Pro (Midnight),Flagship,Vivo,131982.88,158740.53,257,4.2,16,256,4592,108,6.9,Snapdragon 675,Midnight Black,5G,12
+P0349,Oppo Reno 4 (Rose),Mid-Range,Oppo,21376.58,26691.34,317,4.8,6,128,4764,48,6.5,MediaTek Helio P70,Rose Gold,5G,24
+P0350,iPhone 12 Pro Max (Forest),Flagship,Apple,105054.23,131485.97,202,3.4,16,256,4600,50,6.6,Apple A19 Pro,Forest Green,5G,12
+P0351,Nothing Phone (3) (Midnight),Premium,Nothing,46008.48,57433.97,137,4.4,12,128,4556,48,6.7,Dimensity 7300 Pro,Midnight Black,5G,12
+P0352,POCO X7 Pro (Sunrise),Gaming,Xiaomi,23907.21,26882.31,287,4.3,8,256,5554,50,6.7,Snapdragon 8 Gen 1,Sunrise Orange,5G,12
+P0353,Realme 2 Pro (Rose),Budget,Realme,16665.02,18553.92,39,3.1,4,64,4866,50,6.5,Snapdragon 665,Rose Gold,5G,12
+P0354,Vivo V23 (Rose),Mid-Range,Vivo,30495.18,35193.47,232,3.8,8,128,4664,48,6.7,Dimensity 9400,Rose Gold,5G,12
+P0355,Realme X (Forest),Mid-Range,Realme,26247.61,32377.32,143,3.9,6,256,4731,64,6.7,MediaTek Helio P70,Forest Green,5G,12
+P0356,Vivo X80 Pro (Midnight),Flagship,Vivo,117317.15,133194.33,195,4.9,16,1024,5144,108,6.8,Snapdragon 7 Gen 4,Midnight Black,5G,12
+P0357,OnePlus 8 (Lavender),Premium,OnePlus,58399.3,69798.24,155,4.1,12,128,4362,48,6.8,Snapdragon 855,Lavender,5G,24
+P0358,Moto G45 5G (Rose),Budget,Motorola,11668.44,14199.52,235,5.0,6,128,4272,13,6.5,Snapdragon 632,Rose Gold,4G,24
+P0359,Nothing Phone (3a) (Graphite),Mid-Range,Nothing,21409.48,24048.69,0,3.1,6,128,4657,64,6.6,Snapdragon 8s Gen 4,Graphite,5G,12
+P0360,POCO F7 (Graphite),Gaming,Xiaomi,29425.71,36502.32,35,4.1,16,128,5568,50,6.7,Snapdragon 7s Gen 3,Graphite,5G,12
+P0361,Realme 5 Pro (Midnight),Budget,Realme,14437.24,16173.74,221,4.8,6,128,4713,50,6.5,MediaTek Helio P70,Midnight Black,5G,12
+P0362,Oppo Find X3 Pro (Sunrise),Flagship,Oppo,80867.12,96914.64,216,4.5,12,256,5264,200,6.8,Dimensity 9400,Sunrise Orange,5G,12
+P0363,Mi 8 (Forest),Mid-Range,Xiaomi,17936.25,22442.46,121,3.0,8,256,5162,64,6.6,Dimensity 9400,Forest Green,5G,12
+P0364,Realme X2 Pro (Graphite),Premium,Realme,34227.93,41425.15,380,4.6,8,256,4363,64,6.6,Snapdragon 8s Elite,Graphite,5G,24
+P0365,Nothing Phone (1) (Cream),Premium,Nothing,41889.29,50587.03,133,4.6,8,256,4639,64,6.6,Snapdragon 8s Gen 4,Cream White,5G,12
+P0366,Galaxy A50 (Ocean),Budget,Samsung,15457.57,18735.96,386,3.4,4,128,4724,50,6.5,Snapdragon 7 Gen 4,Ocean Blue,5G,12
+P0367,Vivo V25 (Ocean),Mid-Range,Vivo,19222.54,21952.51,96,3.6,6,256,5190,64,6.6,Dimensity 9400,Ocean Blue,5G,12
+P0368,Realme 6 Pro (Lavender),Mid-Range,Realme,29351.88,36248.13,15,4.1,6,128,5137,64,6.7,Dimensity 8350,Lavender,5G,12
+P0369,Realme X7 Pro (Midnight),Premium,Realme,45157.9,55827.56,378,4.5,8,256,4227,48,6.6,Snapdragon 665,Midnight Black,5G,12
+P0370,Realme 8 Pro (Lavender),Mid-Range,Realme,20026.5,22083.45,85,4.9,8,256,4839,50,6.6,Snapdragon 778G,Lavender,5G,12
+P0371,Vivo X90 Pro (Ocean),Flagship,Vivo,128832.37,151196.06,136,3.4,16,512,5209,108,6.6,Snapdragon 865,Ocean Blue,5G,12
+P0372,Vivo V29 (Rose),Premium,Vivo,45694.21,54286.22,113,3.6,8,128,4394,48,6.8,Snapdragon 720G,Rose Gold,5G,12
+P0373,Oppo Reno 6 (Rose),Mid-Range,Oppo,23636.31,28850.46,89,3.3,6,256,4618,64,6.6,Snapdragon 6 Gen 4,Rose Gold,5G,12
+P0374,OnePlus 8T (Forest),Premium,OnePlus,39975.85,45674.17,56,3.3,8,256,4868,48,6.4,Snapdragon 888,Forest Green,5G,12
+P0375,Moto G6 (Sunrise),Budget,Motorola,14628.58,16205.23,163,3.5,6,128,4078,48,6.5,Dimensity 7300,Sunrise Orange,5G,24
+P0376,Oppo Find X5 Pro (Graphite),Flagship,Oppo,137820.15,159348.79,214,3.7,16,256,5429,50,6.9,Snapdragon 865,Graphite,5G,12
+P0377,iPhone 13 (Midnight),Premium,Apple,44632.85,51676.17,0,3.4,8,256,4954,64,6.6,Apple A13 Bionic,Midnight Black,5G,12
+P0378,iPhone 13 Pro Max (Graphite),Flagship,Apple,98968.46,126447.29,359,3.3,12,256,4856,50,6.7,Apple A17 Pro,Graphite,5G,12
+P0379,Redmi Note 7 Pro (Titanium),Budget,Xiaomi,13465.47,16612.04,55,4.7,6,128,4205,13,6.5,Snapdragon 8 Gen 1,Titanium Gray,5G,12
+P0380,Realme GT (Sunrise),Flagship,Realme,81746.88,91260.39,109,4.3,16,1024,4667,50,6.6,Snapdragon 665,Sunrise Orange,5G,12
+P0381,OnePlus 9 (Lavender),Premium,OnePlus,52147.93,62842.46,263,3.6,8,128,4495,64,6.7,Snapdragon 888,Lavender,5G,12
+P0382,Moto G7 Power (Ocean),Budget,Motorola,13090.86,16591.16,32,4.1,6,64,4492,50,6.5,MediaTek Helio P35,Ocean Blue,5G,12
+P0383,Galaxy S20 Ultra (Titanium),Flagship,Samsung,92388.3,112413.95,270,3.9,12,512,4778,50,6.6,Snapdragon 7 Gen 4,Titanium Gray,5G,24
+P0384,Moto One Vision (Ocean),Mid-Range,Motorola,30123.37,35482.71,189,4.5,6,128,4552,64,6.5,Snapdragon 665,Ocean Blue,5G,12
+P0385,OnePlus 9 Pro (Sunrise),Flagship,OnePlus,83796.9,103756.83,379,4.9,12,512,4836,108,6.6,Snapdragon 855,Sunrise Orange,5G,12
+P0386,Galaxy Note 20 Ultra (Titanium),Flagship,Samsung,91258.79,106482.45,177,3.9,16,1024,4903,200,6.5,Snapdragon 8 Gen 2,Titanium Gray,5G,12
+P0387,Vivo X100 Pro (Lavender),Flagship,Vivo,62494.04,75602.29,292,3.9,16,1024,4640,50,6.6,Snapdragon 675,Lavender,5G,12
+P0388,Pixel 4a (Midnight),Budget,Google,12987.31,16206.32,112,4.9,4,64,4247,50,6.5,Google Tensor G5,Midnight Black,5G,24
+P0389,Pixel 5 (Titanium),Premium,Google,36817.15,40797.85,0,4.4,8,256,4510,48,6.4,Google Tensor G2,Titanium Gray,5G,24
+P0390,Vivo V40 (Sunrise),Premium,Vivo,38746.39,47081.16,266,4.5,12,128,4206,50,6.6,Dimensity 9400,Sunrise Orange,5G,12
+P0391,Moto G8 Power (Forest),Budget,Motorola,13917.34,17309.21,328,4.9,6,64,4690,48,6.6,Snapdragon 665,Forest Green,5G,12
+P0392,Mi 9 (Titanium),Premium,Xiaomi,41442.28,45713.53,0,4.2,8,256,4660,64,6.6,Snapdragon 660,Titanium Gray,5G,12
+P0393,iPhone SE (3rd Gen) (Cream),Budget,Apple,10687.54,13414.79,201,4.4,6,64,4250,13,6.5,Apple A16 Bionic,Cream White,4G,12
+P0394,Realme 9 Pro+ (Sunrise),Mid-Range,Realme,28106.18,32376.31,329,4.1,8,256,4660,48,6.6,Snapdragon 778G,Sunrise Orange,5G,12
+P0395,Moto Edge (Titanium),Premium,Motorola,46950.33,59747.23,276,3.9,12,128,4771,48,6.7,Snapdragon 632,Titanium Gray,5G,12
+P0396,Nothing Phone (2) (Sunrise),Premium,Nothing,40630.28,48628.0,118,4.6,12,128,4342,50,6.5,Snapdragon 8s Gen 4,Sunrise Orange,5G,12
+P0397,Vivo X200 Pro (Sunrise),Flagship,Vivo,111544.49,127262.76,30,3.1,16,256,4595,50,6.7,Snapdragon 7 Gen 4,Sunrise Orange,5G,12
+P0398,Realme GT Neo 3 (Rose),Gaming,Realme,32935.7,40120.56,0,4.6,12,128,5325,64,6.8,Dimensity 8350,Rose Gold,5G,12
+P0399,Moto G9 Power (Forest),Budget,Motorola,6538.05,8192.01,371,3.9,6,128,4770,50,6.6,Snapdragon 7 Gen 4,Forest Green,5G,12
+P0400,Realme 10 Pro+ (Rose),Mid-Range,Realme,22659.17,28039.63,386,4.1,6,128,4912,50,6.6,Snapdragon 8s Elite,Rose Gold,5G,12
+P0401,Realme GT Neo 5 (Titanium),Gaming,Realme,30741.75,35433.47,143,3.1,12,128,5337,64,6.6,Snapdragon 665,Titanium Gray,5G,12
+P0402,Pixel 6 (Silver),Premium,Google,54852.47,61369.95,38,3.8,12,256,4871,64,6.7,Google Tensor G4,Silver,5G,12
+P0403,Nothing Phone (2a) (Sunrise),Mid-Range,Nothing,24544.28,29448.8,143,4.2,6,128,4956,50,6.6,Snapdragon 8+ Gen 1,Sunrise Orange,5G,12
+P0404,Redmi Note 8 Pro (Midnight),Budget,Xiaomi,7635.13,9374.62,171,3.3,4,128,4409,50,6.4,Snapdragon 660,Midnight Black,5G,12
+P0405,Mi 10 (Sunrise),Premium,Xiaomi,59330.39,68325.11,243,3.2,12,256,4616,50,6.4,Dimensity 9400,Sunrise Orange,5G,12
+P0406,Moto Edge 20 (Midnight),Premium,Motorola,53223.1,63068.18,395,3.2,8,256,4234,50,6.5,Snapdragon 6s Gen 4,Midnight Black,5G,12
+P0407,OnePlus Nord 2 (Titanium),Mid-Range,OnePlus,18936.96,23950.55,198,3.4,8,256,4818,50,6.6,Snapdragon 8 Elite,Titanium Gray,5G,12
+P0408,Realme 12 Pro+ (Rose),Mid-Range,Realme,17431.17,20653.93,207,4.4,8,128,4814,50,6.5,Snapdragon 665,Rose Gold,5G,12
+P0409,Moto G60 (Ocean),Mid-Range,Motorola,16214.75,19346.55,346,4.5,8,128,4722,48,6.6,Snapdragon 665,Ocean Blue,5G,12
+P0410,iPhone 14 (Sunrise),Premium,Apple,59511.79,68583.71,19,4.9,12,256,4613,48,6.6,Apple A17 Pro,Sunrise Orange,5G,12
+P0411,Moto Edge 30 Pro (Graphite),Premium,Motorola,38302.5,47421.87,135,4.5,12,128,4846,50,6.6,MediaTek Helio P35,Graphite,5G,12
+P0412,Galaxy A51 (Titanium),Budget,Samsung,14135.78,15909.69,162,3.0,4,64,4266,48,6.5,Snapdragon 845,Titanium Gray,5G,12
+P0413,iPhone 14 Pro Max (Ocean),Flagship,Apple,118745.63,140853.91,56,3.6,12,256,5221,200,6.6,Apple A16 Bionic,Ocean Blue,5G,12
+P0414,Pixel 6 Pro (Silver),Flagship,Google,105087.49,120201.18,347,3.7,12,512,5270,108,6.6,Google Tensor G5,Silver,5G,12
+P0415,Nothing Phone (3) (Lavender),Premium,Nothing,44354.41,49900.48,0,3.2,12,256,4871,50,6.4,Dimensity 7300 Pro,Lavender,5G,12
+P0416,Redmi Note 9 Pro (Cream),Budget,Xiaomi,15216.24,18434.74,236,4.5,6,128,4057,48,6.5,Snapdragon 7s Gen 3,Cream White,5G,12
+P0417,Realme GT 6 (Rose),Flagship,Realme,98364.84,108368.48,309,3.8,16,256,4517,200,6.5,Snapdragon 5 Gen 1,Rose Gold,5G,12
+P0418,Moto G82 (Silver),Mid-Range,Motorola,25399.87,32501.88,351,4.9,6,256,4702,50,6.7,MediaTek Helio P35,Silver,5G,12
+P0419,OnePlus 10 Pro (Sunrise),Flagship,OnePlus,84988.87,96048.89,325,4.0,12,512,4818,108,6.7,Snapdragon 835,Sunrise Orange,5G,12
+P0420,Pixel 7 (Rose),Premium,Google,56580.1,66607.94,345,4.2,8,256,4836,64,6.6,Google Tensor G2,Rose Gold,5G,12
+P0421,Moto Edge 40 Pro (Ocean),Premium,Motorola,45753.08,53502.09,228,4.0,12,256,4741,50,6.6,MediaTek Helio P35,Ocean Blue,5G,12
+P0422,Moto G84 5G (Ocean),Mid-Range,Motorola,20897.37,23948.91,97,3.3,6,128,4657,50,6.7,Snapdragon 8 Gen 1,Ocean Blue,5G,12
+P0423,Mi 11 (Midnight),Flagship,Xiaomi,78215.45,87977.1,8,3.1,12,1024,5349,200,6.7,Dimensity 9400,Midnight Black,5G,12
+P0424,Vivo T4 (Silver),Budget,Vivo,14070.02,17492.36,202,3.9,4,64,4893,48,6.6,Snapdragon 720G,Silver,5G,12
+P0425,Nothing Phone (3a) (Rose),Mid-Range,Nothing,24222.72,30415.1,214,3.6,6,256,4805,48,6.6,Snapdragon 8s Gen 4,Rose Gold,5G,12
+P0426,Oppo Reno 8 (Graphite),Mid-Range,Oppo,30345.34,36298.78,395,3.4,8,256,4587,48,6.7,Snapdragon 865,Graphite,5G,12
+P0427,Redmi Note 10 Pro (Titanium),Mid-Range,Xiaomi,32528.18,36218.42,41,4.9,8,128,4505,48,6.6,Snapdragon 8 Gen 1,Titanium Gray,5G,12
+P0428,iPhone 15 (Rose),Premium,Apple,36348.17,45341.61,171,3.2,12,128,4344,48,6.6,Apple A17 Pro,Rose Gold,5G,12
+P0429,Pixel 7 Pro (Silver),Flagship,Google,113964.22,142373.76,346,3.6,16,256,5352,200,6.9,Google Tensor G4,Silver,5G,12
+P0430,OnePlus 10R (Forest),Gaming,OnePlus,35435.74,41966.51,191,4.9,12,128,5964,64,6.9,Snapdragon 8s Gen 4,Forest Green,5G,12
+P0431,Nothing Phone (1) (Midnight),Premium,Nothing,35121.33,42994.35,11,3.2,12,128,4394,48,6.7,Dimensity 7300 Pro,Midnight Black,5G,12
+P0432,Pixel 8 (Titanium),Premium,Google,46363.05,53604.97,197,4.7,12,128,4977,64,6.8,Google Tensor G5,Titanium Gray,5G,12
+P0433,Nothing Phone (2) (Silver),Premium,Nothing,38502.83,47084.89,206,3.8,12,128,4945,48,6.8,Snapdragon 8+ Gen 1,Silver,5G,12
+P0434,Pixel 8 Pro (Graphite),Flagship,Google,74076.86,85249.94,255,4.2,12,256,5347,200,6.6,Google Tensor G2,Graphite,5G,12
+P0435,OnePlus 11 (Silver),Flagship,OnePlus,98477.5,118315.71,123,3.2,12,1024,4911,200,6.7,Snapdragon 8 Elite,Silver,5G,12
+P0436,Oppo Find X6 Pro (Lavender),Flagship,Oppo,86205.56,107623.55,365,4.5,16,512,4946,200,6.7,Dimensity 9400,Lavender,5G,12
+P0437,Oppo Reno10 Pro (Ocean),Premium,Oppo,49486.09,60062.22,299,3.8,12,256,4570,64,6.6,Snapdragon 660,Ocean Blue,5G,12
+P0438,OnePlus Nord 3 (Forest),Mid-Range,OnePlus,25699.11,30944.31,325,3.5,8,256,5133,50,6.7,Snapdragon 888,Forest Green,5G,12
+P0439,Realme 14 Pro+ (Lavender),Mid-Range,Realme,31880.7,37290.0,349,3.5,6,256,4520,50,6.6,Snapdragon 5 Gen 1,Lavender,5G,12
+P0440,OnePlus 12 (Ocean),Flagship,OnePlus,98266.1,125489.48,237,3.7,16,512,5295,200,6.6,Dimensity 8350,Ocean Blue,5G,12
+P0441,Realme GT 7 (Silver),Flagship,Realme,114645.32,128071.2,0,3.8,16,256,5186,200,6.8,MediaTek Helio P70,Silver,5G,12
+P0442,Galaxy S21 Ultra (Titanium),Flagship,Samsung,90250.09,102673.38,1,4.4,12,1024,4512,108,6.8,Exynos 2200,Titanium Gray,5G,12
+P0443,Moto Edge 50 Pro (Silver),Premium,Motorola,58813.02,65575.89,377,4.9,12,256,4327,50,6.6,MediaTek Helio P35,Silver,5G,12
+P0444,Xiaomi 12 (Graphite),Flagship,Xiaomi,101576.07,123550.36,269,3.7,12,1024,5253,50,6.6,Snapdragon 8 Gen 1,Graphite,5G,12
+P0445,Nothing Phone (2a) (Sunrise),Mid-Range,Nothing,26716.46,30191.19,136,4.7,6,128,4584,64,6.6,Dimensity 7300 Pro,Sunrise Orange,5G,12
+P0446,OnePlus 12R (Ocean),Gaming,OnePlus,29400.17,34034.06,54,4.0,12,256,5910,50,6.7,Snapdragon 8 Elite,Ocean Blue,5G,12
+P0447,OnePlus Nord 4 (Graphite),Mid-Range,OnePlus,28087.32,34148.79,159,4.3,8,128,4715,50,6.7,Snapdragon 8s Gen 4,Graphite,5G,12
+P0448,Realme GT Neo 7 (Lavender),Gaming,Realme,37302.56,41376.01,128,4.9,16,512,5368,50,6.7,Snapdragon 665,Lavender,5G,24
+P0449,Realme Narzo 80 (Rose),Budget,Realme,12223.44,15425.13,130,4.1,6,64,4122,13,6.5,Dimensity 8350,Rose Gold,5G,12
+P0450,Pixel 9 (Titanium),Mid-Range,Google,21220.73,23891.15,226,3.2,6,256,4968,64,6.6,Google Tensor G5,Titanium Gray,5G,12
+P0451,Nothing Phone (3) (Forest),Premium,Nothing,56603.84,66466.12,324,3.5,8,256,4222,48,6.5,Snapdragon 8+ Gen 1,Forest Green,5G,12
+P0452,Galaxy A32 (Sunrise),Budget,Samsung,15143.03,17278.29,65,4.0,4,64,4449,50,6.6,Exynos 2500,Sunrise Orange,5G,24
+P0453,Vivo Y300 (Lavender),Mid-Range,Vivo,32652.07,36917.86,372,3.8,6,128,4933,64,6.7,Snapdragon 675,Lavender,5G,12
+P0454,Oppo Find X7 (Silver),Flagship,Oppo,66485.28,78564.86,0,3.4,16,256,5006,200,6.6,Dimensity 8350,Silver,5G,12
+P0455,Oppo Reno13 Pro (Midnight),Premium,Oppo,50639.77,59951.3,18,3.4,8,256,4921,50,6.6,Snapdragon 865,Midnight Black,5G,12
+P0456,Galaxy S22 Ultra (Forest),Flagship,Samsung,125876.47,154911.8,392,3.1,12,256,4843,200,6.5,Snapdragon 8 Gen 2,Forest Green,5G,12
+P0457,iPhone 15 Pro Max (Rose),Flagship,Apple,81422.76,92059.32,350,3.8,16,1024,4924,108,6.7,Apple A17 Pro,Rose Gold,5G,12
+P0458,Vivo Y29 (Midnight),Budget,Vivo,15069.31,18876.5,141,3.4,4,64,4856,13,6.5,Snapdragon 865,Midnight Black,4G,12
+P0459,Realme C75 (Silver),Budget,Realme,9336.84,11082.27,0,4.5,4,64,4115,48,6.5,Snapdragon 665,Silver,5G,12
+P0460,Realme 1 (Titanium),Budget,Realme,8040.7,9299.25,350,3.5,6,64,4780,48,6.5,MediaTek Helio P70,Titanium Gray,5G,12
+P0461,Pixel 9a (Rose),Mid-Range,Google,30025.16,36199.17,182,4.9,8,256,5084,64,6.6,Google Tensor G2,Rose Gold,5G,24
+P0462,Galaxy A53 5G (Rose),Mid-Range,Samsung,20826.9,25031.99,370,4.6,6,256,4506,64,6.7,Exynos 2500,Rose Gold,5G,24
+P0463,Vivo V9 (Graphite),Mid-Range,Vivo,24084.66,28663.68,98,3.1,6,256,5012,50,6.6,Snapdragon 865,Graphite,5G,24
+P0464,iPhone 16 (Silver),Premium,Apple,49678.57,62511.47,1,3.0,12,128,4263,48,6.5,Apple A15 Bionic,Silver,5G,12
+P0465,OnePlus 13 (Rose),Flagship,OnePlus,93981.69,105605.81,218,3.5,16,512,4771,200,6.5,Snapdragon 8s Gen 4,Rose Gold,5G,12
+P0466,Pixel 10 (Midnight),Premium,Google,35574.94,41057.22,0,3.6,8,256,4932,64,6.8,Google Tensor G4,Midnight Black,5G,12
+P0467,Oppo Find X8 (Lavender),Flagship,Oppo,129139.9,151543.34,365,4.5,16,512,5084,108,6.6,Dimensity 9400,Lavender,5G,12
+P0468,OnePlus 13R (Ocean),Premium,OnePlus,43805.98,52433.15,150,3.6,12,256,4553,64,6.5,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0469,Vivo V15 Pro (Graphite),Mid-Range,Vivo,23525.36,26996.97,306,3.7,6,256,4614,64,6.7,Snapdragon 7 Gen 4,Graphite,5G,12
+P0470,iPhone 16 Pro Max (Silver),Flagship,Apple,105785.3,129464.78,308,3.1,16,256,4782,200,6.8,Apple A19 Pro,Silver,5G,12
+P0471,Oppo A5 Pro (Lavender),Mid-Range,Oppo,19192.74,21494.22,156,4.2,8,256,4565,48,6.6,Dimensity 8350,Lavender,5G,12
+P0472,Vivo V17 (Ocean),Mid-Range,Vivo,28483.89,35897.99,137,3.2,8,256,4694,64,6.5,Snapdragon 865,Ocean Blue,5G,24
+P0473,Realme 2 Pro (Midnight),Budget,Realme,13519.44,15802.71,167,3.9,6,128,4120,13,6.6,Dimensity 8350,Midnight Black,5G,12
+P0474,Realme X (Graphite),Mid-Range,Realme,31379.19,38782.97,45,4.0,6,128,4759,64,6.6,Dimensity 8350,Graphite,5G,12
+P0475,Nothing Phone (3a) (Rose),Mid-Range,Nothing,25649.35,31783.02,194,3.8,8,256,4774,64,6.6,Snapdragon 8s Gen 4,Rose Gold,5G,24
+P0476,iPhone 16e (Lavender),Mid-Range,Apple,27294.75,33576.33,89,4.3,6,128,4746,48,6.7,Apple A14 Bionic,Lavender,5G,24
+P0477,Redmi Note 11 Pro+ (Silver),Mid-Range,Xiaomi,19557.58,23094.41,245,3.2,6,256,4904,64,6.7,Dimensity 9400,Silver,5G,12
+P0478,OnePlus Nord CE5 (Midnight),Mid-Range,OnePlus,31999.3,39796.51,285,4.5,8,128,5107,48,6.6,Snapdragon 8s Gen 4,Midnight Black,5G,12
+P0479,POCO F4 (Titanium),Gaming,Xiaomi,27650.07,34795.17,0,4.8,16,512,5417,64,6.9,Snapdragon 660,Titanium Gray,5G,12
+P0480,Galaxy S23 Ultra (Rose),Flagship,Samsung,142445.1,158745.34,56,3.9,16,512,4591,108,6.7,Snapdragon 8 Gen 2,Rose Gold,5G,12
+P0481,Xiaomi 13 (Sunrise),Flagship,Xiaomi,80230.44,98411.29,47,4.3,16,1024,4637,50,6.8,Snapdragon 660,Sunrise Orange,5G,12
+P0482,Redmi Note 12 Pro+ (Cream),Mid-Range,Xiaomi,25602.54,28170.62,73,4.0,8,128,5036,64,6.7,Snapdragon 8 Gen 1,Cream White,5G,24
+P0483,Oppo A5 (Sunrise),Budget,Oppo,14708.0,17471.83,150,3.9,6,64,4443,48,6.6,Dimensity 9400,Sunrise Orange,5G,24
+P0484,Vivo X50 (Midnight),Premium,Vivo,48775.09,62162.24,123,4.9,8,256,4562,64,6.7,Snapdragon 675,Midnight Black,5G,12
+P0485,Realme 5 Pro (Silver),Budget,Realme,12490.3,14235.89,0,5.0,4,128,4925,50,6.5,Snapdragon 5 Gen 1,Silver,5G,12
+P0486,Moto Razr 40 (Graphite),Premium,Motorola,44977.84,53258.07,108,4.9,8,256,4876,50,6.7,Snapdragon 665,Graphite,5G,24
+P0487,Vivo V20 (Silver),Mid-Range,Vivo,29142.75,33296.09,183,3.3,8,128,5177,48,6.6,Snapdragon 675,Silver,5G,12
+P0488,Realme X2 Pro (Sunrise),Premium,Realme,38026.36,42695.81,298,3.6,12,128,4482,48,6.8,Snapdragon 5 Gen 1,Sunrise Orange,5G,12
+P0489,OnePlus 5T (Ocean),Mid-Range,OnePlus,23536.97,28234.34,287,3.8,6,128,4777,48,6.6,Dimensity 8350,Ocean Blue,5G,24
+P0490,Oppo F9 (Rose),Mid-Range,Oppo,28474.71,31865.57,53,3.5,6,128,4581,64,6.7,Snapdragon 865,Rose Gold,5G,12
+P0491,OnePlus 6T (Titanium),Premium,OnePlus,37222.24,46028.43,49,3.8,8,256,4818,50,6.5,Dimensity 8350,Titanium Gray,5G,12
+P0492,Pixel 10 Pro (Cream),Flagship,Google,64722.09,78844.58,326,3.1,12,512,5279,108,6.8,Snapdragon 765G,Cream White,5G,12
+P0493,Moto G95 5G (Lavender),Mid-Range,Motorola,28737.04,34816.03,0,3.5,8,256,4601,48,6.5,MediaTek Helio P35,Lavender,5G,12
+P0494,Nothing Phone (1) (Titanium),Premium,Nothing,46709.62,53573.89,96,3.4,12,128,4246,48,6.5,Snapdragon 8+ Gen 1,Titanium Gray,5G,12
+P0495,Realme 6 Pro (Midnight),Mid-Range,Realme,18277.04,21742.98,0,3.8,8,256,4523,48,6.7,Snapdragon 8s Elite,Midnight Black,5G,12
+P0496,Oppo Reno 2 (Cream),Mid-Range,Oppo,31275.35,35751.02,128,3.8,6,128,4727,64,6.7,Snapdragon 865,Cream White,5G,12
+P0497,Realme X7 Pro (Titanium),Premium,Realme,56096.62,62487.35,393,4.4,8,128,4442,48,6.8,MediaTek Helio P70,Titanium Gray,5G,12
+P0498,Galaxy Z Fold5 (Graphite),Flagship,Samsung,75965.21,90716.67,221,4.3,16,256,4767,200,6.6,Exynos 9810,Graphite,5G,12
+P0499,Realme 8 Pro (Sunrise),Mid-Range,Realme,25817.7,28717.16,3,4.0,6,128,4838,48,6.7,Snapdragon 665,Sunrise Orange,5G,12
+P0500,iPhone 17 (Rose),Premium,Apple,41358.61,49043.61,136,4.4,12,256,4732,48,6.7,Apple A19,Rose Gold,5G,12
+P0501,Oppo Find X2 (Forest),Flagship,Oppo,131743.42,148270.41,103,5.0,12,512,4593,108,6.6,Dimensity 8350,Forest Green,5G,12
+P0502,Realme GT (Forest),Flagship,Realme,120866.34,139245.67,22,4.7,12,1024,4512,50,6.8,Dimensity 8350,Forest Green,5G,12
+P0503,Pixel 3 (Midnight),Premium,Google,38055.4,47826.25,385,3.2,8,256,4653,50,6.5,Google Tensor G2,Midnight Black,5G,12
+P0504,Pixel 3a (Cream),Budget,Google,15006.59,18275.54,59,4.9,6,128,4570,48,6.4,Google Tensor G5,Cream White,5G,12
+P0505,Realme 9 Pro+ (Cream),Mid-Range,Realme,28033.7,34101.49,222,3.2,6,128,4655,50,6.7,Snapdragon 665,Cream White,5G,12
+P0506,Nothing Phone (2) (Silver),Premium,Nothing,47122.1,52788.09,47,4.3,8,256,4916,64,6.5,Snapdragon 8s Gen 4,Silver,5G,12
+P0507,iPhone 17 Pro Max (Titanium),Flagship,Apple,116758.71,130450.34,313,3.1,16,1024,4880,200,6.6,Apple A11 Bionic,Titanium Gray,5G,12
+P0508,iPhone 17 Pro (Lavender),Flagship,Apple,119706.2,153114.8,284,4.7,12,1024,5302,200,6.7,Apple A12 Bionic,Lavender,5G,12
+P0509,Moto Edge 60 Pro (Cream),Premium,Motorola,43620.57,54082.28,29,3.7,12,128,4464,48,6.7,Snapdragon 6s Gen 4,Cream White,5G,24
+P0510,iPhone 17 Air (Graphite),Premium,Apple,36739.03,44022.14,0,4.0,12,128,4639,50,6.5,Apple A11 Bionic,Graphite,5G,12
+P0511,Realme GT Neo 3 (Titanium),Gaming,Realme,25537.47,32459.11,134,4.3,8,512,5634,64,6.7,Snapdragon 778G,Titanium Gray,5G,12
+P0512,Galaxy A54 5G (Sunrise),Mid-Range,Samsung,21241.99,23467.34,153,4.6,6,128,4656,50,6.6,Snapdragon 8 Gen 2,Sunrise Orange,5G,12
+P0513,POCO X5 Pro (Rose),Gaming,Xiaomi,23259.98,28607.36,22,3.0,16,256,5744,64,6.9,Snapdragon 7s Gen 3,Rose Gold,5G,12
+P0514,Galaxy S24 Ultra (Lavender),Flagship,Samsung,63137.6,76738.92,187,4.4,16,512,5202,108,6.8,Snapdragon 845,Lavender,5G,12
+P0515,iPhone SE (4th Gen) (Silver),Budget,Apple,12979.58,16130.4,197,3.1,6,64,4406,50,6.5,Apple A14 Bionic,Silver,5G,12
+P0516,Realme 10 Pro+ (Rose),Mid-Range,Realme,30076.87,37772.05,88,4.1,6,128,4793,48,6.5,Snapdragon 665,Rose Gold,5G,12
+P0517,Galaxy S24+ (Ocean),Flagship,Samsung,96829.5,116570.81,342,4.7,12,512,5060,108,6.8,Snapdragon 8 Gen 2,Ocean Blue,5G,12
+P0518,OnePlus 7 Pro (Silver),Flagship,OnePlus,109714.75,137521.67,300,3.7,12,512,4721,108,6.6,Snapdragon 855,Silver,5G,12
+P0519,Pixel 4 (Cream),Premium,Google,52080.98,60047.38,395,4.2,12,128,4335,64,6.7,Snapdragon 765G,Cream White,5G,12
+P0520,OnePlus 7T (Lavender),Premium,OnePlus,33306.01,41986.89,131,4.6,12,256,4582,48,6.7,Dimensity 8350,Lavender,5G,12
+P0521,iPhone X (Silver),Premium,Apple,47618.17,59561.42,63,3.6,12,256,4867,48,6.7,Apple A13 Bionic,Silver,5G,12
+P0522,Nothing Phone (2a) (Lavender),Mid-Range,Nothing,27494.2,33357.83,258,3.5,8,256,4781,64,6.5,Snapdragon 8+ Gen 1,Lavender,5G,12
+P0523,Galaxy A55 5G (Ocean),Mid-Range,Samsung,30555.32,36911.8,367,4.1,8,128,5039,50,6.5,Snapdragon 7 Gen 4,Ocean Blue,5G,12
+P0524,Galaxy S25 Ultra (Rose),Flagship,Samsung,75986.74,92610.74,287,4.6,16,256,5254,50,6.6,Snapdragon 730,Rose Gold,5G,12
+P0525,Nothing Phone (3) (Midnight),Premium,Nothing,44315.65,54352.8,86,4.0,12,256,4908,64,6.6,Snapdragon 8s Gen 4,Midnight Black,5G,24
+P0526,Galaxy S25+ (Graphite),Flagship,Samsung,125993.47,152001.2,367,3.3,16,1024,4753,108,6.6,Snapdragon 8 Gen 2,Graphite,5G,12
+P0527,Moto Razr 60 (Lavender),Premium,Motorola,55372.13,68625.54,3,3.5,12,128,4295,50,6.7,Snapdragon 632,Lavender,5G,12
+P0528,Pixel 4a (Forest),Budget,Google,15313.01,16922.29,228,3.0,6,128,4385,50,6.4,Google Tensor,Forest Green,4G,24
+P0529,OnePlus 8 (Ocean),Premium,OnePlus,43856.23,48535.18,324,4.7,8,256,4665,48,6.8,Dimensity 8350,Ocean Blue,5G,12
+P0530,Nothing Phone (3a) (Titanium),Mid-Range,Nothing,16711.07,19499.68,250,4.6,6,256,5011,48,6.7,Dimensity 7300 Pro,Titanium Gray,5G,12
+P0531,Oppo Reno 4 (Sunrise),Mid-Range,Oppo,29747.46,36555.62,298,5.0,6,128,4517,50,6.6,Snapdragon 6 Gen 4,Sunrise Orange,5G,12
+P0532,Oppo Find X3 Pro (Forest),Flagship,Oppo,133685.24,149269.26,392,5.0,16,256,4895,108,6.6,Snapdragon 6 Gen 4,Forest Green,5G,12
+P0533,OnePlus 8T (Rose),Premium,OnePlus,53090.31,63792.3,209,3.8,8,256,4802,48,6.7,Snapdragon 835,Rose Gold,5G,12
+P0534,Galaxy S25 (Ocean),Premium,Samsung,51874.2,66041.98,294,3.0,8,128,4888,64,6.6,Exynos 2500,Ocean Blue,5G,24
+P0535,Nothing Phone (1) (Graphite),Premium,Nothing,37213.19,45717.23,103,3.9,8,128,4444,50,6.8,Snapdragon 8+ Gen 1,Graphite,5G,12
+P0536,Pixel 5 (Cream),Premium,Google,49649.5,59022.01,63,3.1,8,128,4906,50,6.7,Google Tensor,Cream White,5G,12
+P0537,Pixel 6 (Titanium),Premium,Google,54492.76,68577.21,16,5.0,12,256,4576,64,6.5,Google Tensor G2,Titanium Gray,5G,12
+P0538,Moto G45 5G (Forest),Budget,Motorola,13041.85,14613.5,232,4.1,4,64,4196,13,6.4,Dimensity 7300,Forest Green,5G,12
+P0539,Nothing Phone (2) (Ocean),Premium,Nothing,51814.76,58622.92,78,3.9,12,256,4860,48,6.8,Snapdragon 8s Gen 4,Ocean Blue,5G,12
+P0540,Galaxy Z Fold7 (Graphite),Flagship,Samsung,83551.64,105481.79,157,4.2,12,256,5188,200,6.5,Exynos 2500,Graphite,5G,12
+P0541,Xiaomi 14 (Cream),Flagship,Xiaomi,102613.51,127425.16,226,4.9,12,512,4712,108,6.7,Dimensity 9400,Cream White,5G,12
+P0542,OnePlus 9 (Graphite),Premium,OnePlus,52134.47,61359.33,90,5.0,8,128,4696,50,6.6,Snapdragon 8 Elite,Graphite,5G,12
+P0543,Vivo X60 Pro (Rose),Flagship,Vivo,107339.14,135983.8,155,3.2,16,512,4926,200,6.6,Snapdragon 675,Rose Gold,5G,24
+P0544,OnePlus 9 Pro (Ocean),Flagship,OnePlus,120259.95,134865.79,308,4.1,16,512,5368,50,6.7,Snapdragon 8 Elite,Ocean Blue,5G,12
+P0545,Nothing Phone (2a) (Titanium),Mid-Range,Nothing,31043.81,38442.63,169,3.2,8,256,4986,50,6.7,Snapdragon 8+ Gen 1,Titanium Gray,5G,12
+P0546,Pixel 6 Pro (Cream),Flagship,Google,88748.19,99697.22,133,3.8,16,512,5067,200,6.8,Google Tensor G5,Cream White,5G,12
+P0547,Galaxy Z Flip7 (Cream),Premium,Samsung,48056.56,55938.51,275,4.8,12,256,4726,64,6.7,Exynos 2500,Cream White,5G,12
+P0548,Pixel 7 (Midnight),Premium,Google,59333.65,69544.73,99,3.7,12,128,4984,50,6.8,Google Tensor G2,Midnight Black,5G,12
+P0549,Oppo Reno 6 (Sunrise),Mid-Range,Oppo,28539.31,35439.74,296,4.4,8,128,5040,50,6.7,Dimensity 8350,Sunrise Orange,5G,12
+P0550,Galaxy A56 5G (Rose),Mid-Range,Samsung,20073.15,23889.97,382,4.5,8,256,4692,50,6.5,Snapdragon 7 Gen 4,Rose Gold,5G,12
+P0551,Vivo V21 (Graphite),Mid-Range,Vivo,28258.74,33111.72,310,3.4,8,256,4544,50,6.7,Dimensity 9400,Graphite,5G,12
+P0552,iPhone XR (Midnight),Mid-Range,Apple,23079.19,25661.46,205,4.6,8,256,4748,50,6.6,Apple A18,Midnight Black,5G,12
+P0553,Redmi Note 13 Pro+ (Lavender),Mid-Range,Xiaomi,18162.85,21246.91,394,3.6,6,128,5051,50,6.5,Snapdragon 660,Lavender,5G,12
+P0554,iPhone XS (Graphite),Premium,Apple,37532.87,42247.36,40,3.2,12,256,4233,64,6.8,Apple A13 Bionic,Graphite,5G,12
+P0555,Vivo X70 Pro (Cream),Flagship,Vivo,88734.54,99559.84,78,4.3,12,1024,4690,108,6.7,Snapdragon 865,Cream White,5G,12
+P0556,Nothing Phone (3) (Forest),Premium,Nothing,47152.13,52788.07,207,4.9,8,256,4493,48,6.5,Dimensity 7300 Pro,Forest Green,5G,12
+P0557,Realme GT Neo 5 (Sunrise),Gaming,Realme,23619.7,29713.22,232,4.0,8,512,5588,64,6.6,Snapdragon 5 Gen 1,Sunrise Orange,5G,12
+P0558,Vivo V23 (Rose),Mid-Range,Vivo,31170.61,37210.02,83,3.8,8,128,4746,50,6.7,Dimensity 9400,Rose Gold,5G,12
+P0559,Moto G6 (Lavender),Budget,Motorola,16891.21,18849.04,379,3.5,4,64,4597,48,6.6,Snapdragon 632,Lavender,5G,24
+P0560,OnePlus Nord 2 (Midnight),Mid-Range,OnePlus,26356.29,32078.55,104,3.6,6,256,4857,64,6.6,Snapdragon 855,Midnight Black,5G,12
+P0561,Moto G7 Power (Titanium),Budget,Motorola,14491.75,18411.97,266,4.7,6,64,4853,48,6.5,Snapdragon 8 Gen 1,Titanium Gray,5G,12
+P0562,Pixel 7 Pro (Rose),Flagship,Google,91952.2,116997.31,66,3.8,12,1024,4739,50,6.8,Snapdragon 765G,Rose Gold,5G,12
+P0563,Oppo Find X5 Pro (Forest),Flagship,Oppo,77308.56,90983.1,193,4.5,12,256,5373,50,6.5,Snapdragon 865,Forest Green,5G,24
+P0564,Oppo Reno 8 (Graphite),Mid-Range,Oppo,28781.52,36752.49,0,4.8,8,256,5013,64,6.6,Snapdragon 660,Graphite,5G,12
+P0565,Pixel 8 (Sunrise),Premium,Google,38827.68,44634.73,119,5.0,12,256,4258,64,6.4,Google Tensor G4,Sunrise Orange,5G,12
+P0566,OnePlus 10 Pro (Titanium),Flagship,OnePlus,110183.37,136029.79,284,3.8,16,1024,4695,108,6.6,Dimensity 8350,Titanium Gray,5G,12
+P0567,Vivo X80 Pro (Midnight),Flagship,Vivo,84952.08,101129.76,303,3.5,16,1024,4515,50,6.8,Snapdragon 865,Midnight Black,5G,12
+P0568,Realme 12 Pro+ (Forest),Mid-Range,Realme,16991.72,21263.94,0,4.3,8,256,4732,50,6.7,MediaTek Helio P70,Forest Green,5G,12
+P0569,Realme GT 6 (Graphite),Flagship,Realme,100627.08,117003.48,334,4.8,12,256,4754,50,6.5,Snapdragon 778G,Graphite,5G,12
+P0570,OnePlus 10R (Cream),Gaming,OnePlus,34959.83,43441.43,61,3.6,16,256,5829,64,6.6,Snapdragon 888,Cream White,5G,12
+P0571,Galaxy A36 5G (Graphite),Mid-Range,Samsung,31331.77,34603.34,236,3.8,8,128,4843,48,6.6,Snapdragon 845,Graphite,5G,12
+P0572,Galaxy M56 5G (Midnight),Budget,Samsung,10730.77,12843.84,142,4.9,6,64,4120,50,6.4,Exynos 2500,Midnight Black,5G,24
+P0573,Galaxy F56 5G (Forest),Budget,Samsung,13794.84,16748.65,21,3.5,6,64,4056,50,6.4,Snapdragon 730,Forest Green,5G,12
+P0574,Galaxy S8 (Lavender),Mid-Range,Samsung,26634.7,30558.96,157,3.4,8,256,4507,64,6.6,Snapdragon 8 Elite,Lavender,5G,12
+P0575,OnePlus 11 (Sunrise),Flagship,OnePlus,77922.67,91485.77,47,3.5,12,1024,5407,108,6.9,Snapdragon 835,Sunrise Orange,5G,24
+P0576,OnePlus Nord 3 (Silver),Mid-Range,OnePlus,30593.85,34368.74,13,3.5,6,128,4694,64,6.6,Snapdragon 855,Silver,5G,12
+P0577,Vivo V25 (Sunrise),Mid-Range,Vivo,22656.13,26363.0,144,4.5,6,128,4633,64,6.6,Snapdragon 865,Sunrise Orange,5G,12
+P0578,Nothing Phone (3a) (Silver),Mid-Range,Nothing,22644.56,26720.8,253,3.4,8,128,4884,50,6.6,Snapdragon 8+ Gen 1,Silver,5G,12
+P0579,POCO X6 Pro (Rose),Gaming,Xiaomi,36532.82,41071.84,341,3.8,12,256,5829,64,6.6,Snapdragon 660,Rose Gold,5G,12
+P0580,Vivo X90 Pro (Ocean),Flagship,Vivo,89351.73,109676.71,351,4.7,12,1024,4661,50,6.7,Dimensity 9400,Ocean Blue,5G,12
+P0581,Moto One Vision (Lavender),Mid-Range,Motorola,24173.11,26971.46,218,4.5,8,128,5104,48,6.5,Dimensity 7300,Lavender,5G,12
+P0582,Galaxy S9+ (Cream),Mid-Range,Samsung,27569.24,30801.61,327,3.5,8,128,4508,50,6.6,Snapdragon 8 Elite,Cream White,5G,24
+P0583,iPhone 11 (Cream),Mid-Range,Apple,29188.86,35407.64,25,3.8,8,128,5132,64,6.6,Apple A17 Pro,Cream White,5G,12
+P0584,Oppo Find X6 Pro (Graphite),Flagship,Oppo,113118.59,138134.4,34,4.3,12,1024,5102,200,6.9,Snapdragon 6 Gen 4,Graphite,5G,12
+P0585,Nothing Phone (1) (Forest),Premium,Nothing,31763.55,40608.16,154,4.6,12,128,4560,64,6.4,Dimensity 7300 Pro,Forest Green,5G,12
+P0586,Xiaomi 15 Ultra (Midnight),Flagship,Xiaomi,83246.02,99791.35,291,3.6,16,256,5267,108,6.7,Snapdragon 7s Gen 3,Midnight Black,5G,12
+P0587,Galaxy Note 9 (Rose),Premium,Samsung,41982.49,48660.33,339,4.0,8,256,4854,64,6.4,Snapdragon 7 Gen 4,Rose Gold,5G,12
+P0588,Pixel 8 Pro (Rose),Flagship,Google,118450.08,151047.64,243,3.5,16,512,5136,200,6.6,Google Tensor G3,Rose Gold,5G,12
+P0589,Xiaomi 15 (Silver),Premium,Xiaomi,39698.16,49528.38,175,4.4,12,256,4530,64,6.6,Snapdragon 8 Gen 1,Silver,5G,12
+P0590,Realme 14 Pro+ (Cream),Mid-Range,Realme,26110.83,30476.83,44,4.0,8,128,5190,64,6.5,Snapdragon 5 Gen 1,Cream White,5G,12
+P0591,Galaxy S10+ (Silver),Premium,Samsung,55274.14,67251.61,266,3.7,12,256,4394,64,6.4,Exynos 2200,Silver,5G,12
+P0592,Redmi Note 14 Pro+ (Silver),Mid-Range,Xiaomi,34486.08,38560.68,305,3.1,6,128,4778,48,6.5,Snapdragon 660,Silver,5G,24
+P0593,Redmi 14C (Graphite),Budget,Xiaomi,8021.55,9714.62,172,3.6,6,64,4248,50,6.6,Dimensity 9400,Graphite,4G,12
+P0594,iPhone 11 Pro Max (Silver),Premium,Apple,39633.4,48646.17,0,4.8,8,256,4723,50,6.4,Apple A12 Bionic,Silver,5G,12
+P0595,Oppo Reno10 Pro (Titanium),Premium,Oppo,33382.5,41789.34,132,3.8,8,256,4284,50,6.5,Snapdragon 6 Gen 4,Titanium Gray,5G,12
+P0596,iPhone SE (2nd Gen) (Silver),Budget,Apple,15186.72,16880.77,110,4.6,6,64,4792,50,6.5,Apple A12 Bionic,Silver,4G,12
+P0597,Vivo V29 (Silver),Premium,Vivo,40709.36,50960.12,85,4.5,12,128,4764,48,6.6,Snapdragon 720G,Silver,5G,12
+P0598,iPhone 12 Mini (Sunrise),Mid-Range,Apple,25530.78,31434.28,198,3.4,6,256,4678,48,6.6,Apple A18,Sunrise Orange,5G,12
+P0599,POCO X7 Pro (Forest),Gaming,Xiaomi,33929.15,39030.16,237,4.2,16,512,5109,108,6.9,Snapdragon 855,Forest Green,5G,12
+P0600,POCO F7 (Forest),Gaming,Xiaomi,24403.6,29611.88,317,3.9,16,128,5484,50,6.9,Snapdragon 660,Forest Green,5G,12
