@@ -205,13 +205,5 @@ The app opens at `http://localhost:8501`.
 
 ---
 
-## 🎓 Suggested Presentation Line
-
-> "We built a Mobile Store Customer Insights & Sales Intelligence Platform for
-> a simulated 60-store mobile phone retail chain, CustomerLens, selling ten
-> phone brands. It centralizes customer, order, product (specs/warranty),
-> inventory, and feedback data, and layers five machine learning models —
-> K-Means segmentation, Random Forest churn prediction, Nearest-Neighbors product
-> recommendations, Linear Regression sales forecasting, and TextBlob sentiment
-> analysis — on top of an interactive Streamlit dashboard with role-based access
-> control and Excel/PDF reporting."
+## Author
+Developed By Mayank Aneja
