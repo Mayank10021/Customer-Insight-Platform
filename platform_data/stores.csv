@@ -1,0 +1,61 @@
+StoreID,StoreName,City,State,Manager,OpeningDate
+ST0001,"CustomerLens Mobile Store, Pune #1",Pune,Maharashtra,Ira Malhotra,2026-04-29
+ST0002,"CustomerLens Mobile Store, Surat #2",Surat,Gujarat,Meera Bhatt,2023-12-15
+ST0003,"CustomerLens Mobile Store, Bhopal #3",Bhopal,Madhya Pradesh,Myra Agarwal,2024-12-30
+ST0004,"CustomerLens Mobile Store, Ahmedabad #4",Ahmedabad,Gujarat,Tara Das,2025-08-06
+ST0005,"CustomerLens Mobile Store, Ahmedabad #5",Ahmedabad,Gujarat,Anika Shetty,2024-12-28
+ST0006,"CustomerLens Mobile Store, Indore #6",Indore,Madhya Pradesh,Saanvi Pillai,2024-11-03
+ST0007,"CustomerLens Mobile Store, Pune #7",Pune,Maharashtra,Ira Gupta,2023-12-31
+ST0008,"CustomerLens Mobile Store, Patna #8",Patna,Bihar,Myra Saxena,2024-08-23
+ST0009,"CustomerLens Mobile Store, Bengaluru #9",Bengaluru,Karnataka,Vihaan Menon,2024-03-20
+ST0010,"CustomerLens Mobile Store, Pune #10",Pune,Maharashtra,Kiara Agarwal,2024-05-28
+ST0011,"CustomerLens Mobile Store, Lucknow #11",Lucknow,Uttar Pradesh,Kabir Pillai,2025-07-23
+ST0012,"CustomerLens Mobile Store, Rohtak #12",Rohtak,Haryana,Ayaan Pillai,2025-05-25
+ST0013,"CustomerLens Mobile Store, Surat #13",Surat,Gujarat,Kiara Gupta,2025-04-30
+ST0014,"CustomerLens Mobile Store, Surat #14",Surat,Gujarat,Sai Pillai,2024-08-02
+ST0015,"CustomerLens Mobile Store, Patna #15",Patna,Bihar,Kavya Kulkarni,2026-05-23
+ST0016,"CustomerLens Mobile Store, Nagpur #16",Nagpur,Maharashtra,Navya Rao,2023-10-05
+ST0017,"CustomerLens Mobile Store, Lucknow #17",Lucknow,Uttar Pradesh,Saanvi Kapoor,2024-07-12
+ST0018,"CustomerLens Mobile Store, Delhi #18",Delhi,Delhi,Ishaan Sharma,2023-11-08
+ST0019,"CustomerLens Mobile Store, Indore #19",Indore,Madhya Pradesh,Manish Mehta,2024-07-08
+ST0020,"CustomerLens Mobile Store, Jaipur #20",Jaipur,Rajasthan,Pooja Malhotra,2026-05-26
+ST0021,"CustomerLens Mobile Store, Lucknow #21",Lucknow,Uttar Pradesh,Anaya Mishra,2024-08-07
+ST0022,"CustomerLens Mobile Store, Kolkata #22",Kolkata,West Bengal,Riya Nair,2026-03-28
+ST0023,"CustomerLens Mobile Store, Bengaluru #23",Bengaluru,Karnataka,Reyansh Reddy,2024-12-27
+ST0024,"CustomerLens Mobile Store, Panipat #24",Panipat,Haryana,Dhruv Chopra,2025-08-10
+ST0025,"CustomerLens Mobile Store, Nagpur #25",Nagpur,Maharashtra,Neha Mishra,2024-11-16
+ST0026,"CustomerLens Mobile Store, Bhopal #26",Bhopal,Madhya Pradesh,Sneha Shetty,2024-04-18
+ST0027,"CustomerLens Mobile Store, Ahmedabad #27",Ahmedabad,Gujarat,Vihaan Verma,2025-10-20
+ST0028,"CustomerLens Mobile Store, Nagpur #28",Nagpur,Maharashtra,Aadhya Iyer,2026-06-03
+ST0029,"CustomerLens Mobile Store, Lucknow #29",Lucknow,Uttar Pradesh,Aryan Desai,2024-04-16
+ST0030,"CustomerLens Mobile Store, Ahmedabad #30",Ahmedabad,Gujarat,Dhruv Verma,2025-11-05
+ST0031,"CustomerLens Mobile Store, Jaipur #31",Jaipur,Rajasthan,Riya Shetty,2024-04-13
+ST0032,"CustomerLens Mobile Store, Hyderabad #32",Hyderabad,Telangana,Advik Reddy,2025-08-29
+ST0033,"CustomerLens Mobile Store, Pune #33",Pune,Maharashtra,Dhruv Rana,2025-11-16
+ST0034,"CustomerLens Mobile Store, Lucknow #34",Lucknow,Uttar Pradesh,Aarohi Reddy,2024-11-07
+ST0035,"CustomerLens Mobile Store, Indore #35",Indore,Madhya Pradesh,Zara Malhotra,2025-09-20
+ST0036,"CustomerLens Mobile Store, Pune #36",Pune,Maharashtra,Diya Agarwal,2024-04-26
+ST0037,"CustomerLens Mobile Store, Indore #37",Indore,Madhya Pradesh,Ishaan Singh,2023-09-26
+ST0038,"CustomerLens Mobile Store, Nagpur #38",Nagpur,Maharashtra,Kavya Pillai,2023-10-15
+ST0039,"CustomerLens Mobile Store, Hyderabad #39",Hyderabad,Telangana,Neha Bose,2024-11-04
+ST0040,"CustomerLens Mobile Store, Bhopal #40",Bhopal,Madhya Pradesh,Sai Kulkarni,2026-03-21
+ST0041,"CustomerLens Mobile Store, Delhi #41",Delhi,Delhi,Dhruv Mishra,2023-11-18
+ST0042,"CustomerLens Mobile Store, Surat #42",Surat,Gujarat,Ayaan Agarwal,2024-11-14
+ST0043,"CustomerLens Mobile Store, Patna #43",Patna,Bihar,Advik Chopra,2025-08-14
+ST0044,"CustomerLens Mobile Store, Kolkata #44",Kolkata,West Bengal,Aarav Chopra,2024-02-09
+ST0045,"CustomerLens Mobile Store, Pune #45",Pune,Maharashtra,Kabir Chopra,2025-09-03
+ST0046,"CustomerLens Mobile Store, Rohtak #46",Rohtak,Haryana,Kabir Desai,2024-06-02
+ST0047,"CustomerLens Mobile Store, Jaipur #47",Jaipur,Rajasthan,Kabir Rao,2025-12-08
+ST0048,"CustomerLens Mobile Store, Panipat #48",Panipat,Haryana,Pooja Patel,2025-03-30
+ST0049,"CustomerLens Mobile Store, Patna #49",Patna,Bihar,Kiara Mehta,2025-02-22
+ST0050,"CustomerLens Mobile Store, Nagpur #50",Nagpur,Maharashtra,Sneha Sharma,2024-01-11
+ST0051,"CustomerLens Mobile Store, Surat #51",Surat,Gujarat,Diya Singh,2024-11-22
+ST0052,"CustomerLens Mobile Store, Bengaluru #52",Bengaluru,Karnataka,Kabir Gupta,2026-01-29
+ST0053,"CustomerLens Mobile Store, Kolkata #53",Kolkata,West Bengal,Manish Kulkarni,2023-07-22
+ST0054,"CustomerLens Mobile Store, Jaipur #54",Jaipur,Rajasthan,Kiara Trivedi,2025-10-13
+ST0055,"CustomerLens Mobile Store, Jaipur #55",Jaipur,Rajasthan,Rohan Bhatt,2024-12-25
+ST0056,"CustomerLens Mobile Store, Mumbai #56",Mumbai,Maharashtra,Manish Malhotra,2025-08-31
+ST0057,"CustomerLens Mobile Store, Lucknow #57",Lucknow,Uttar Pradesh,Vivaan Trivedi,2025-06-30
+ST0058,"CustomerLens Mobile Store, Delhi #58",Delhi,Delhi,Sai Kumar,2024-10-19
+ST0059,"CustomerLens Mobile Store, Surat #59",Surat,Gujarat,Ishaan Rana,2024-06-05
+ST0060,"CustomerLens Mobile Store, Patna #60",Patna,Bihar,Arjun Bose,2025-05-22
