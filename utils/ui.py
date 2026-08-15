@@ -831,10 +831,8 @@ def sidebar_nav(current_page, is_admin=False, role=None):
     gets a small section label followed by its indented pages — no popovers
     needed since a sidebar has the vertical room a top bar didn't). Returns
     the page key the user clicked, or current_page if nothing changed.
-    
-    Includes a smooth collapse/expand toggle for compact view.
     """
-    # Initialize sidebar state
+    # Initialize sidebar collapse state
     if "sidebar_collapsed" not in st.session_state:
         st.session_state.sidebar_collapsed = False
     
@@ -852,34 +850,51 @@ def sidebar_nav(current_page, is_admin=False, role=None):
     is_collapsed = st.session_state.sidebar_collapsed
 
     with st.sidebar:
-        # Brand header with attractive toggle button
-        col_logo, col_spacer, col_toggle = st.columns([2.5, 0.2, 0.8])
+        # ===== BRAND HEADER WITH TOGGLE BUTTON =====
+        col_brand, col_btn = st.columns([3, 1], gap="small")
         
-        with col_logo:
+        with col_brand:
             if is_collapsed:
                 st.markdown(
-                    f'<div class="fm-sidebar-brand-collapsed"><span>📱</span></div>',
-                    unsafe_allow_html=True,
+                    f"""
+                    <div style="display: flex; align-items: center; gap: 8px; padding: 10px 0; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;">
+                        <div style="background: linear-gradient(135deg, {CORAL}, {TEAL}); width: 35px; height: 35px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);">
+                            📱
+                        </div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
                 )
             else:
                 st.markdown(
-                    f'<div class="fm-sidebar-brand"><span>📱</span><span>CustomerLens</span></div>',
-                    unsafe_allow_html=True,
+                    f"""
+                    <div style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;">
+                        <div style="background: linear-gradient(135deg, {CORAL}, {TEAL}); width: 35px; height: 35px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);">
+                            📱
+                        </div>
+                        <span style="color: {NAVY}; font-weight: 800; font-size: 16px; letter-spacing: 0.5px;">CustomerLens</span>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
                 )
         
-        with col_toggle:
-            toggle_icon = "»" if is_collapsed else "«"
-            toggle_help = "Expand Sidebar" if is_collapsed else "Collapse Sidebar"
-            
-            if st.button(toggle_icon, key="sidebar_toggle", help=toggle_help, use_container_width=True):
+        with col_btn:
+            toggle_text = "»" if is_collapsed else "«"
+            if st.button(
+                toggle_text,
+                key="sidebar_toggle_btn",
+                help="Collapse Sidebar" if not is_collapsed else "Expand Sidebar",
+                use_container_width=True
+            ):
                 st.session_state.sidebar_collapsed = not st.session_state.sidebar_collapsed
                 st.rerun()
         
-        st.markdown("<div style='height:12px;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 6px;'></div>", unsafe_allow_html=True)
         
-        # Render navigation items
+        # ===== NAVIGATION ITEMS =====
         for group_label, group_icon, sub in groups:
             if len(sub) == 1:
+                # Single item group - show as plain button
                 key, icon, label = sub[0]
                 with st.container(key=f"nav_{key}"):
                     if is_collapsed:
@@ -889,12 +904,10 @@ def sidebar_nav(current_page, is_admin=False, role=None):
                         if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
                             clicked = key
             else:
-                # Show section header only when expanded
+                # Multi-item group - show section header and sub-items
                 if not is_collapsed:
-                    st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>',
-                                unsafe_allow_html=True)
+                    st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>', unsafe_allow_html=True)
                 
-                # Show sub-items
                 for key, icon, label in sub:
                     with st.container(key=f"nav_{key}"):
                         if is_collapsed:
@@ -904,7 +917,7 @@ def sidebar_nav(current_page, is_admin=False, role=None):
                             if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
                                 clicked = key
 
-    # Highlight whichever pill is currently active
+    # Highlight active page
     st.markdown(f"""
     <style>
         div[class*="st-key-nav_{current_page}"] button {{
