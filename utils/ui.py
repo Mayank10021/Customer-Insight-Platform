@@ -98,14 +98,20 @@ def inject_base_css():
         [data-testid="stSidebar"] {{
             background: {SIDEBAR_BG};
             border-right: 1px solid {BORDER};
+            transition: all 0.3s ease !important;
         }}
         [data-testid="stSidebar"][aria-expanded="true"] {{
-            min-width: 250px !important;
-            max-width: 250px !important;
+            min-width: 260px !important;
+            max-width: 260px !important;
         }}
-        /* Collapsed state for custom sidebar toggle */
+        /* Collapsed state - compact sidebar with icons only */
+        body.sidebar-collapsed [data-testid="stSidebar"] {{
+            min-width: 90px !important;
+            max-width: 90px !important;
+        }}
         [data-testid="stSidebarUserContent"] {{
-            transition: all 0.2s ease;
+            transition: all 0.3s ease !important;
+            padding: 0 0.6rem !important;
         }}
         [data-testid="stSidebar"] > div {{
             padding-top: 1rem;
@@ -113,12 +119,10 @@ def inject_base_css():
         [data-testid="stSidebarUserContent"] {{
             padding: 0 0.7rem;
         }}
-        /* The little arrow that expands the sidebar again once it's
-           collapsed must stay visible — it lives outside <header>, but we
-           defend it explicitly anyway since it's the only way back in. */
+        /* Hide Streamlit's native sidebar collapse button - we have our own custom toggle */
         [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] {{
-            visibility: visible !important;
-            display: flex !important;
+            visibility: hidden !important;
+            display: none !important;
         }}
 
         [data-testid="stSidebar"] button {{
@@ -128,50 +132,85 @@ def inject_base_css():
             font-size: 13.5px !important;
             font-weight: 600 !important;
             width: 100% !important;
-            height: 40px !important;
+            height: 42px !important;
             border-radius: 9px !important;
-            margin-bottom: 2px !important;
-            text-align: left !important;
-            justify-content: flex-start !important;
-            padding-left: 12px !important;
+            margin-bottom: 3px !important;
+            text-align: center !important;
+            justify-content: center !important;
+            padding: 0 !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
             transition: all 0.15s ease;
+            display: flex !important;
+            align-items: center !important;
         }}
         [data-testid="stSidebar"] button p {{
-            text-align: left !important;
+            text-align: center !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
+            margin: 0 !important;
+            width: 100% !important;
+        }}
+        
+        /* Ensure nav buttons display icon + label properly when expanded */
+        [data-testid="stSidebar"] button:not([key="sidebar_toggle"]) {{
+            justify-content: center !important;
         }}
         [data-testid="stSidebar"] button:hover {{
             background: #f3f2fb !important;
             color: {NAVY} !important;
         }}
+        
+        /* Sidebar toggle button - make it attractive */
+        [data-testid="stSidebar"] [data-testid="stButton"][key="sidebar_toggle"] button {{
+            background: linear-gradient(135deg, {CORAL}, {TEAL}) !important;
+            color: white !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            height: 40px !important;
+            border-radius: 9px !important;
+            box-shadow: 0 4px 12px rgba(108,92,231,0.25) !important;
+            transition: all 0.2s ease !important;
+            border: none !important;
+        }}
+        [data-testid="stSidebar"] [data-testid="stButton"][key="sidebar_toggle"] button:hover {{
+            background: linear-gradient(135deg, {TEAL}, {CORAL}) !important;
+            box-shadow: 0 6px 16px rgba(108,92,231,0.35) !important;
+            transform: translateY(-2px) !important;
+        }}
+        [data-testid="stSidebar"] [data-testid="stButton"][key="sidebar_toggle"] button:active {{
+            transform: translateY(0) !important;
+        }}
 
         .fm-sidebar-brand {{
             display:flex; align-items:center; gap:10px; color:{NAVY};
-            font-weight:800; font-size:16px; padding: 6px 10px 16px 10px;
-            letter-spacing: 0.2px; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;
-            white-space: nowrap;
+            font-weight:800; font-size:16px; padding: 8px 10px 14px 10px;
+            letter-spacing: 0.3px; border-bottom: 1px solid {BORDER}; 
+            white-space: nowrap; flex-wrap: nowrap;
         }}
         .fm-sidebar-brand span:first-child {{
             background: linear-gradient(135deg, {CORAL}, {TEAL});
-            width: 30px; height: 30px; border-radius: 9px; flex-shrink: 0;
+            width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
             display:flex; align-items:center; justify-content:center;
-            font-size: 15px; box-shadow: 0 4px 10px rgba(108,92,231,0.35);
+            font-size: 16px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);
+            transition: all 0.2s ease;
+        }}
+        .fm-sidebar-brand span:last-child {{
+            font-size: 15px; font-weight: 800; letter-spacing: 0.5px;
         }}
         .fm-sidebar-brand-collapsed {{
-            display:flex; align-items:center; justify-content:center; gap:10px; color:{NAVY};
-            font-weight:800; font-size:16px; padding: 6px 10px 16px 10px;
-            letter-spacing: 0.2px; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;
+            display:flex; align-items:center; justify-content:center; gap:0; color:{NAVY};
+            padding: 8px 10px 14px 10px;
+            letter-spacing: 0.3px; border-bottom: 1px solid {BORDER};
         }}
         .fm-sidebar-brand-collapsed span {{
             background: linear-gradient(135deg, {CORAL}, {TEAL});
-            width: 30px; height: 30px; border-radius: 9px; flex-shrink: 0;
+            width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
             display:flex; align-items:center; justify-content:center;
-            font-size: 15px; box-shadow: 0 4px 10px rgba(108,92,231,0.35);
+            font-size: 16px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);
+            transition: all 0.2s ease;
         }}
         .fm-sidebar-section {{
             color:{MUTED}; font-size:10px; font-weight:700; letter-spacing:1.2px;
@@ -787,11 +826,13 @@ def _build_notifications(data):
 
 def sidebar_nav(current_page, is_admin=False, role=None):
     """
-    Renders a clean, professional left sidebar: brand header with collapse/expand toggle,
-    grouped nav (a group with one page is a plain button; a group with several pages
+    Renders a clean, professional left sidebar: brand header, grouped nav
+    (a group with one page is a plain button; a group with several pages
     gets a small section label followed by its indented pages — no popovers
     needed since a sidebar has the vertical room a top bar didn't). Returns
     the page key the user clicked, or current_page if nothing changed.
+    
+    Includes a smooth collapse/expand toggle for compact view.
     """
     # Initialize sidebar state
     if "sidebar_collapsed" not in st.session_state:
@@ -808,52 +849,59 @@ def sidebar_nav(current_page, is_admin=False, role=None):
 
     groups = _grouped_nav(items)
     clicked = current_page
+    is_collapsed = st.session_state.sidebar_collapsed
 
     with st.sidebar:
-        # Brand header with collapse/expand toggle
-        col_brand, col_toggle = st.columns([4, 0.8])
-        with col_brand:
-            if st.session_state.sidebar_collapsed:
+        # Brand header with attractive toggle button
+        col_logo, col_spacer, col_toggle = st.columns([2.5, 0.2, 0.8])
+        
+        with col_logo:
+            if is_collapsed:
                 st.markdown(
-                    '<div class="fm-sidebar-brand-collapsed"><span>📱</span></div>',
+                    f'<div class="fm-sidebar-brand-collapsed"><span>📱</span></div>',
                     unsafe_allow_html=True,
                 )
             else:
                 st.markdown(
-                    '<div class="fm-sidebar-brand"><span>📱</span><span>CustomerLens</span></div>',
+                    f'<div class="fm-sidebar-brand"><span>📱</span><span>CustomerLens</span></div>',
                     unsafe_allow_html=True,
                 )
         
         with col_toggle:
-            toggle_icon = "»" if st.session_state.sidebar_collapsed else "«"
-            if st.button(toggle_icon, key="sidebar_toggle", width="stretch", help="Toggle sidebar"):
+            toggle_icon = "»" if is_collapsed else "«"
+            toggle_help = "Expand Sidebar" if is_collapsed else "Collapse Sidebar"
+            
+            if st.button(toggle_icon, key="sidebar_toggle", help=toggle_help, use_container_width=True):
                 st.session_state.sidebar_collapsed = not st.session_state.sidebar_collapsed
                 st.rerun()
         
-        st.markdown("<div style='height:6px;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height:12px;'></div>", unsafe_allow_html=True)
         
         # Render navigation items
         for group_label, group_icon, sub in groups:
             if len(sub) == 1:
                 key, icon, label = sub[0]
                 with st.container(key=f"nav_{key}"):
-                    if st.session_state.sidebar_collapsed:
-                        if st.button(icon, key=f"btn_{key}", width="stretch", help=label):
+                    if is_collapsed:
+                        if st.button(icon, key=f"btn_{key}", use_container_width=True, help=label):
                             clicked = key
                     else:
-                        if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
+                        if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
                             clicked = key
             else:
-                if not st.session_state.sidebar_collapsed:
+                # Show section header only when expanded
+                if not is_collapsed:
                     st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>',
                                 unsafe_allow_html=True)
+                
+                # Show sub-items
                 for key, icon, label in sub:
                     with st.container(key=f"nav_{key}"):
-                        if st.session_state.sidebar_collapsed:
-                            if st.button(icon, key=f"btn_{key}", width="stretch", help=label):
+                        if is_collapsed:
+                            if st.button(icon, key=f"btn_{key}", use_container_width=True, help=label):
                                 clicked = key
                         else:
-                            if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
+                            if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
                                 clicked = key
 
     # Highlight whichever pill is currently active
