@@ -119,10 +119,18 @@ def inject_base_css():
         [data-testid="stSidebarUserContent"] {{
             padding: 0 0.7rem;
         }}
-        /* Hide Streamlit's native sidebar collapse button - we have our own custom toggle */
-        [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] {{
+        /* Hide Streamlit's native sidebar collapse button completely */
+        [data-testid="stSidebarCollapsedControl"], 
+        [data-testid="collapsedControl"],
+        button[aria-label="Collapse sidebar"],
+        [data-testid="stSidebar"] [data-testid="stBaseButton"] {{
             visibility: hidden !important;
             display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            pointer-events: none !important;
         }}
 
         [data-testid="stSidebar"] button {{
@@ -832,10 +840,6 @@ def sidebar_nav(current_page, is_admin=False, role=None):
     needed since a sidebar has the vertical room a top bar didn't). Returns
     the page key the user clicked, or current_page if nothing changed.
     """
-    # Initialize sidebar collapse state
-    if "sidebar_collapsed" not in st.session_state:
-        st.session_state.sidebar_collapsed = False
-    
     if is_admin:
         items = ADMIN_NAV_ITEMS
     elif role == "Vendor":
@@ -847,49 +851,20 @@ def sidebar_nav(current_page, is_admin=False, role=None):
 
     groups = _grouped_nav(items)
     clicked = current_page
-    is_collapsed = st.session_state.sidebar_collapsed
 
     with st.sidebar:
-        # ===== BRAND HEADER WITH TOGGLE BUTTON =====
-        col_brand, col_btn = st.columns([3, 1], gap="small")
-        
-        with col_brand:
-            if is_collapsed:
-                st.markdown(
-                    f"""
-                    <div style="display: flex; align-items: center; gap: 8px; padding: 10px 0; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;">
-                        <div style="background: linear-gradient(135deg, {CORAL}, {TEAL}); width: 35px; height: 35px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);">
-                            📱
-                        </div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
-            else:
-                st.markdown(
-                    f"""
-                    <div style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;">
-                        <div style="background: linear-gradient(135deg, {CORAL}, {TEAL}); width: 35px; height: 35px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);">
-                            📱
-                        </div>
-                        <span style="color: {NAVY}; font-weight: 800; font-size: 16px; letter-spacing: 0.5px;">CustomerLens</span>
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
-        
-        with col_btn:
-            toggle_text = "»" if is_collapsed else "«"
-            if st.button(
-                toggle_text,
-                key="sidebar_toggle_btn",
-                help="Collapse Sidebar" if not is_collapsed else "Expand Sidebar",
-                use_container_width=True
-            ):
-                st.session_state.sidebar_collapsed = not st.session_state.sidebar_collapsed
-                st.rerun()
-        
-        st.markdown("<div style='height: 6px;'></div>", unsafe_allow_html=True)
+        # ===== BRAND HEADER =====
+        st.markdown(
+            f"""
+            <div style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid {BORDER}; margin-bottom: 15px;">
+                <div style="background: linear-gradient(135deg, {CORAL}, {TEAL}); width: 35px; height: 35px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);">
+                    📱
+                </div>
+                <span style="color: {NAVY}; font-weight: 800; font-size: 16px; letter-spacing: 0.5px;">CustomerLens</span>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
         
         # ===== NAVIGATION ITEMS =====
         for group_label, group_icon, sub in groups:
@@ -897,25 +872,16 @@ def sidebar_nav(current_page, is_admin=False, role=None):
                 # Single item group - show as plain button
                 key, icon, label = sub[0]
                 with st.container(key=f"nav_{key}"):
-                    if is_collapsed:
-                        if st.button(icon, key=f"btn_{key}", use_container_width=True, help=label):
-                            clicked = key
-                    else:
-                        if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
-                            clicked = key
+                    if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
+                        clicked = key
             else:
                 # Multi-item group - show section header and sub-items
-                if not is_collapsed:
-                    st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>', unsafe_allow_html=True)
                 
                 for key, icon, label in sub:
                     with st.container(key=f"nav_{key}"):
-                        if is_collapsed:
-                            if st.button(icon, key=f"btn_{key}", use_container_width=True, help=label):
-                                clicked = key
-                        else:
-                            if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
-                                clicked = key
+                        if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
+                            clicked = key
 
     # Highlight active page
     st.markdown(f"""
