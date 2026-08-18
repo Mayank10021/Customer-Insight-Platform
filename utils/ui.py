@@ -119,11 +119,13 @@ def inject_base_css():
         [data-testid="stSidebarUserContent"] {{
             padding: 0 0.7rem;
         }}
-        /* Hide Streamlit's native sidebar collapse button completely */
+        /* Hide Streamlit's native sidebar collapse button completely - AGGRESSIVE */
         [data-testid="stSidebarCollapsedControl"], 
         [data-testid="collapsedControl"],
         button[aria-label="Collapse sidebar"],
-        [data-testid="stSidebar"] [data-testid="stBaseButton"] {{
+        [data-testid="stSidebar"] [data-testid="stBaseButton"],
+        [data-testid="stSidebar"] button[kind="secondary"],
+        [data-testid="stSidebar"] > div > div > button {{
             visibility: hidden !important;
             display: none !important;
             width: 0 !important;
@@ -131,6 +133,16 @@ def inject_base_css():
             padding: 0 !important;
             margin: 0 !important;
             pointer-events: none !important;
+            opacity: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+        }}
+        
+        /* Hide any button in sidebar header area */
+        [data-testid="stSidebar"] header button,
+        [data-testid="stSidebar"] [role="banner"] button {{
+            visibility: hidden !important;
+            display: none !important;
         }}
 
         [data-testid="stSidebar"] button {{
@@ -892,6 +904,35 @@ def sidebar_nav(current_page, is_admin=False, role=None):
             font-weight: 700 !important;
             border-left: 3px solid {CORAL} !important;
         }}
+    </style>
+    """, unsafe_allow_html=True)
+
+    # NUCLEAR OPTION - Hide Streamlit collapse button permanently
+    st.markdown("""
+    <style>
+        /* Hide collapse/expand button - every possible selector */
+        [data-testid="stSidebarCollapsedControl"] { display: none !important; visibility: hidden !important; }
+        [data-testid="collapsedControl"] { display: none !important; visibility: hidden !important; }
+        button[aria-label*="Collapse"] { display: none !important; visibility: hidden !important; }
+        button[aria-label*="collapse"] { display: none !important; visibility: hidden !important; }
+        
+        /* Hide any button in sidebar top area */
+        [data-testid="stSidebar"] > div > div:first-child button {
+            display: none !important;
+            visibility: hidden !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        
+        /* Hide sidebar header buttons */
+        .stSidebar [data-testid="stButton"] { display: none !important; }
+        [data-testid="stSidebar"] header { display: none !important; }
+        
+        /* Alternative - hide by position */
+        button[style*="absolute"], 
+        button[style*="fixed"] {
+            display: none !important;
+        }
     </style>
     """, unsafe_allow_html=True)
 
