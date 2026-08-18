@@ -3,6 +3,7 @@ UI Helpers - theme CSS, expanded icon+label sidebar, functional top bar
 (working search / notifications / help / profile), KPI cards.
 """
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.io as pio
@@ -98,20 +99,10 @@ def inject_base_css():
         [data-testid="stSidebar"] {{
             background: {SIDEBAR_BG};
             border-right: 1px solid {BORDER};
-            transition: all 0.3s ease !important;
         }}
         [data-testid="stSidebar"][aria-expanded="true"] {{
-            min-width: 260px !important;
-            max-width: 260px !important;
-        }}
-        /* Collapsed state - compact sidebar with icons only */
-        body.sidebar-collapsed [data-testid="stSidebar"] {{
-            min-width: 90px !important;
-            max-width: 90px !important;
-        }}
-        [data-testid="stSidebarUserContent"] {{
-            transition: all 0.3s ease !important;
-            padding: 0 0.6rem !important;
+            min-width: 250px !important;
+            max-width: 250px !important;
         }}
         [data-testid="stSidebar"] > div {{
             padding-top: 1rem;
@@ -119,30 +110,12 @@ def inject_base_css():
         [data-testid="stSidebarUserContent"] {{
             padding: 0 0.7rem;
         }}
-        /* Hide Streamlit's native sidebar collapse button completely - AGGRESSIVE */
-        [data-testid="stSidebarCollapsedControl"], 
-        [data-testid="collapsedControl"],
-        button[aria-label="Collapse sidebar"],
-        [data-testid="stSidebar"] [data-testid="stBaseButton"],
-        [data-testid="stSidebar"] button[kind="secondary"],
-        [data-testid="stSidebar"] > div > div > button {{
-            visibility: hidden !important;
-            display: none !important;
-            width: 0 !important;
-            height: 0 !important;
-            padding: 0 !important;
-            margin: 0 !important;
-            pointer-events: none !important;
-            opacity: 0 !important;
-            position: absolute !important;
-            left: -9999px !important;
-        }}
-        
-        /* Hide any button in sidebar header area */
-        [data-testid="stSidebar"] header button,
-        [data-testid="stSidebar"] [role="banner"] button {{
-            visibility: hidden !important;
-            display: none !important;
+        /* The little arrow that expands the sidebar again once it's
+           collapsed must stay visible — it lives outside <header>, but we
+           defend it explicitly anyway since it's the only way back in. */
+        [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] {{
+            visibility: visible !important;
+            display: flex !important;
         }}
 
         [data-testid="stSidebar"] button {{
@@ -152,85 +125,39 @@ def inject_base_css():
             font-size: 13.5px !important;
             font-weight: 600 !important;
             width: 100% !important;
-            height: 42px !important;
+            height: 40px !important;
             border-radius: 9px !important;
-            margin-bottom: 3px !important;
-            text-align: center !important;
-            justify-content: center !important;
-            padding: 0 !important;
+            margin-bottom: 2px !important;
+            text-align: left !important;
+            justify-content: flex-start !important;
+            padding-left: 12px !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
             transition: all 0.15s ease;
-            display: flex !important;
-            align-items: center !important;
         }}
         [data-testid="stSidebar"] button p {{
-            text-align: center !important;
+            text-align: left !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
-            margin: 0 !important;
-            width: 100% !important;
-        }}
-        
-        /* Ensure nav buttons display icon + label properly when expanded */
-        [data-testid="stSidebar"] button:not([key="sidebar_toggle"]) {{
-            justify-content: center !important;
         }}
         [data-testid="stSidebar"] button:hover {{
             background: #f3f2fb !important;
             color: {NAVY} !important;
         }}
-        
-        /* Sidebar toggle button - make it attractive */
-        [data-testid="stSidebar"] [data-testid="stButton"][key="sidebar_toggle"] button {{
-            background: linear-gradient(135deg, {CORAL}, {TEAL}) !important;
-            color: white !important;
-            font-size: 16px !important;
-            font-weight: 700 !important;
-            height: 40px !important;
-            border-radius: 9px !important;
-            box-shadow: 0 4px 12px rgba(108,92,231,0.25) !important;
-            transition: all 0.2s ease !important;
-            border: none !important;
-        }}
-        [data-testid="stSidebar"] [data-testid="stButton"][key="sidebar_toggle"] button:hover {{
-            background: linear-gradient(135deg, {TEAL}, {CORAL}) !important;
-            box-shadow: 0 6px 16px rgba(108,92,231,0.35) !important;
-            transform: translateY(-2px) !important;
-        }}
-        [data-testid="stSidebar"] [data-testid="stButton"][key="sidebar_toggle"] button:active {{
-            transform: translateY(0) !important;
-        }}
 
         .fm-sidebar-brand {{
             display:flex; align-items:center; gap:10px; color:{NAVY};
-            font-weight:800; font-size:16px; padding: 8px 10px 14px 10px;
-            letter-spacing: 0.3px; border-bottom: 1px solid {BORDER}; 
-            white-space: nowrap; flex-wrap: nowrap;
+            font-weight:800; font-size:16px; padding: 6px 10px 16px 10px;
+            letter-spacing: 0.2px; border-bottom: 1px solid {BORDER}; margin-bottom: 10px;
+            white-space: nowrap;
         }}
         .fm-sidebar-brand span:first-child {{
             background: linear-gradient(135deg, {CORAL}, {TEAL});
-            width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
+            width: 30px; height: 30px; border-radius: 9px; flex-shrink: 0;
             display:flex; align-items:center; justify-content:center;
-            font-size: 16px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);
-            transition: all 0.2s ease;
-        }}
-        .fm-sidebar-brand span:last-child {{
-            font-size: 15px; font-weight: 800; letter-spacing: 0.5px;
-        }}
-        .fm-sidebar-brand-collapsed {{
-            display:flex; align-items:center; justify-content:center; gap:0; color:{NAVY};
-            padding: 8px 10px 14px 10px;
-            letter-spacing: 0.3px; border-bottom: 1px solid {BORDER};
-        }}
-        .fm-sidebar-brand-collapsed span {{
-            background: linear-gradient(135deg, {CORAL}, {TEAL});
-            width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
-            display:flex; align-items:center; justify-content:center;
-            font-size: 16px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);
-            transition: all 0.2s ease;
+            font-size: 15px; box-shadow: 0 4px 10px rgba(108,92,231,0.35);
         }}
         .fm-sidebar-section {{
             color:{MUTED}; font-size:10px; font-weight:700; letter-spacing:1.2px;
@@ -754,7 +681,7 @@ NAV_ITEMS = [
     ("feedback", "💬", "Give Feedback"),
 ]
 
-ADMIN_NAV_ITEMS = NAV_ITEMS + [("vendor", "🏷️", "Vendor Management"),
+ADMIN_NAV_ITEMS = NAV_ITEMS + [("add_data", "➕", "Add New Data"), ("vendor", "🏷️", "Vendor Management"),
                                  ("vendor360", "🏢", "Vendor 360"), ("admin", "⚙️", "Admin Panel")]
 
 # A Vendor's own scoped navigation — every page here reads from data that's
@@ -799,7 +726,7 @@ _GROUP_DEFS = [
     ("Vendors", "🏬", ["vendor", "vendor360"]),
     ("Reports", "📄", ["reports"]),
     ("Feedback", "💬", ["feedback"]),
-    ("Admin", "⚙️", ["admin"]),
+    ("Admin", "⚙️", ["add_data", "admin"]),
 ]
 
 
@@ -865,37 +792,25 @@ def sidebar_nav(current_page, is_admin=False, role=None):
     clicked = current_page
 
     with st.sidebar:
-        # ===== BRAND HEADER =====
         st.markdown(
-            f"""
-            <div style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid {BORDER}; margin-bottom: 15px;">
-                <div style="background: linear-gradient(135deg, {CORAL}, {TEAL}); width: 35px; height: 35px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 4px 12px rgba(108,92,231,0.3);">
-                    📱
-                </div>
-                <span style="color: {NAVY}; font-weight: 800; font-size: 16px; letter-spacing: 0.5px;">CustomerLens</span>
-            </div>
-            """,
-            unsafe_allow_html=True
+            '<div class="fm-sidebar-brand"><span>📱</span><span>CustomerLens</span></div>',
+            unsafe_allow_html=True,
         )
-        
-        # ===== NAVIGATION ITEMS =====
         for group_label, group_icon, sub in groups:
             if len(sub) == 1:
-                # Single item group - show as plain button
                 key, icon, label = sub[0]
                 with st.container(key=f"nav_{key}"):
-                    if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
+                    if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
                         clicked = key
             else:
-                # Multi-item group - show section header and sub-items
-                st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>', unsafe_allow_html=True)
-                
+                st.markdown(f'<div class="fm-sidebar-section">{group_icon} {group_label}</div>',
+                            unsafe_allow_html=True)
                 for key, icon, label in sub:
                     with st.container(key=f"nav_{key}"):
-                        if st.button(f"{icon}  {label}", key=f"btn_{key}", use_container_width=True):
+                        if st.button(f"{icon}  {label}", key=f"btn_{key}", width="stretch"):
                             clicked = key
 
-    # Highlight active page
+    # Highlight whichever pill is currently active
     st.markdown(f"""
     <style>
         div[class*="st-key-nav_{current_page}"] button {{
@@ -904,35 +819,6 @@ def sidebar_nav(current_page, is_admin=False, role=None):
             font-weight: 700 !important;
             border-left: 3px solid {CORAL} !important;
         }}
-    </style>
-    """, unsafe_allow_html=True)
-
-    # NUCLEAR OPTION - Hide Streamlit collapse button permanently
-    st.markdown("""
-    <style>
-        /* Hide collapse/expand button - every possible selector */
-        [data-testid="stSidebarCollapsedControl"] { display: none !important; visibility: hidden !important; }
-        [data-testid="collapsedControl"] { display: none !important; visibility: hidden !important; }
-        button[aria-label*="Collapse"] { display: none !important; visibility: hidden !important; }
-        button[aria-label*="collapse"] { display: none !important; visibility: hidden !important; }
-        
-        /* Hide any button in sidebar top area */
-        [data-testid="stSidebar"] > div > div:first-child button {
-            display: none !important;
-            visibility: hidden !important;
-            width: 0 !important;
-            height: 0 !important;
-        }
-        
-        /* Hide sidebar header buttons */
-        .stSidebar [data-testid="stButton"] { display: none !important; }
-        [data-testid="stSidebar"] header { display: none !important; }
-        
-        /* Alternative - hide by position */
-        button[style*="absolute"], 
-        button[style*="fixed"] {
-            display: none !important;
-        }
     </style>
     """, unsafe_allow_html=True)
 
