@@ -265,9 +265,9 @@ def inject_base_css():
             padding: 0 !important;
         }}
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle button {{
-            width: 48px !important;
-            height: 48px !important;
-            min-height: 48px !important;
+            width: 68px !important;
+            height: 68px !important;
+            min-height: 68px !important;
             margin: 0 auto 4px auto !important;
             padding: 0 !important;
             border: none !important;
