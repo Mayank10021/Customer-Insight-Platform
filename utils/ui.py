@@ -1,5 +1,5 @@
 """
-UI Helpers - theme CSS, expanded icon+label sidebar, functional top bar
+UI - theme CSS, expanded icon+label sidebar, functional top bar
 (working search / notifications / help / profile), KPI cards.
 """
 import streamlit as st
@@ -127,7 +127,7 @@ def inject_base_css():
                the top edge, like ChatGPT. */
             margin-top: -52px !important;
             padding-top: 0 !important;
-            padding-left: 8px !important;
+            padding-left: 0 !important;
             padding-right: 8px !important;
             padding-bottom: 12px !important;
         }}
@@ -176,37 +176,99 @@ def inject_base_css():
             color: {NAVY} !important;
         }}
 
-        /* Custom sidebar toggle — deliberately styled like the other navigation
-           buttons in expanded mode. This keeps the sidebar looking like one
-           coherent professional navigation system instead of a floating pill. */
+        /* ---------------- Custom collapse / expand toggle ----------------
+           One definition only. It stays flush with the LEFT edge in both
+           expanded and collapsed states. */
+        [data-testid="stSidebar"] .st-key-sidebar_toggle {{
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            max-width: 44px !important;
+            margin: 0 0 8px 0 !important;
+            padding: 0 !important;
+            position: relative !important;
+            left: 0 !important;
+            top: 0 !important;
+            transform: none !important;
+            z-index: 10 !important;
+        }}
+
         [data-testid="stSidebar"] .st-key-sidebar_toggle button {{
-            width: 100% !important;
-            height: 40px !important;
-            min-height: 40px !important;
-            margin: 0 0 4px 0 !important;
-            padding: 0 10px !important;
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            max-width: 44px !important;
+            min-height: 44px !important;
+            max-height: 44px !important;
+            margin: 0 !important;
+            padding: 0 !important;
             border: none !important;
-            background: transparent !important;
-            color: #5c5876 !important;
             border-radius: 10px !important;
+            background: #f3f2fb !important;
+            color: #161029 !important;
             box-shadow: none !important;
             display: flex !important;
             align-items: center !important;
-            justify-content: flex-start !important;
-            text-align: left !important;
-            font-size: 13.5px !important;
+            justify-content: center !important;
+            font-size: 22px !important;
             font-weight: 600 !important;
-            transition: all 0.15s ease !important;
-        }}
-        [data-testid="stSidebar"] .st-key-sidebar_toggle button p {{
-            margin: 0 !important;
             line-height: 1 !important;
-            font-size: 13.5px !important;
-            font-weight: 600 !important;
         }}
+
+        [data-testid="stSidebar"] .st-key-sidebar_toggle button p {{
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-size: 22px !important;
+            line-height: 1 !important;
+        }}
+
         [data-testid="stSidebar"] .st-key-sidebar_toggle button:hover {{
-            background: #f3f2fb !important;
-            color: {NAVY} !important;
+            background: #ebe9fa !important;
+            color: #6c5ce7 !important;
+        }}
+
+        /* Collapsed state: EXACT same position and size. */
+        [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle {{
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            max-width: 44px !important;
+            margin: 0 0 8px 0 !important;
+            padding: 0 !important;
+            left: 0 !important;
+            top: 0 !important;
+            transform: none !important;
+        }}
+
+        [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle button {{
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            max-width: 44px !important;
+            min-height: 44px !important;
+            max-height: 44px !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }}
+
+        [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle button p {{
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 100% !important;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-size: 22px !important;
+            line-height: 1 !important;
         }}
 
         .fm-sidebar-brand {{
@@ -257,39 +319,54 @@ def inject_base_css():
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .fm-sidebar-brand .brand-short {{
             cursor: default;
         }}
-        /* In collapsed mode the toggle is NOT a floating card. It is
-           deliberately identical to the other icon-only navigation buttons. */
+        /* Collapsed mode: keep the toggle exactly the same size and
+           flush-left position as the expanded state. */
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle {{
-            width: 100% !important;
-            margin: 0 0 4px 0 !important;
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            max-width: 44px !important;
+            margin: 0 0 8px 0 !important;
             padding: 0 !important;
+            left: 0 !important;
+            top: 0 !important;
+            transform: none !important;
         }}
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle button {{
-            width: 68px !important;
-            height: 68px !important;
-            min-height: 68px !important;
-            margin: 0 auto 4px auto !important;
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            max-width: 44px !important;
+            min-height: 44px !important;
+            max-height: 44px !important;
+            margin: 0 !important;
             padding: 0 !important;
             border: none !important;
-            background: transparent !important;
-            color: #5c5876 !important;
             border-radius: 10px !important;
+            background: #f3f2fb !important;
+            color: #161029 !important;
             box-shadow: none !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
             text-align: center !important;
-            font-size: 20px !important;
-            font-weight: 600 !important;
+            font-size: 22px !important;
+            line-height: 1 !important;
         }}
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle button p {{
-            font-size: 20px !important;
-            line-height: 1.05 !important;
-            text-align: center !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 100% !important;
+            height: 100% !important;
             margin: 0 !important;
+            padding: 0 !important;
+            font-size: 22px !important;
+            line-height: 1 !important;
+            transform: none !important;
         }}
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) .st-key-sidebar_toggle button:hover {{
-            background: #f3f2fb !important;
+            background: #ebe9fa !important;
             color: {CORAL} !important;
         }}
         [data-testid="stSidebar"]:has(.fm-sidebar-collapsed) [class*="st-key-nav_"] button {{
@@ -318,12 +395,6 @@ def inject_base_css():
             overflow: visible !important;
             white-space: nowrap !important;
             text-overflow: clip !important;
-        }}
-
-        /* Keep the toggle aligned with the navigation stack. */
-        [data-testid="stSidebar"] .st-key-sidebar_toggle {{
-            margin-top: 6px !important;
-            margin-bottom: 8px !important;
         }}
 
         div[data-testid="stMainBlockContainer"] {{
@@ -694,6 +765,7 @@ def inject_base_css():
             border-radius: 10px !important;
             overflow: hidden;
         }}
+
     </style>
     """, unsafe_allow_html=True)
 
@@ -964,7 +1036,7 @@ def sidebar_nav(current_page, is_admin=False, role=None):
 
         with st.container(key="sidebar_toggle"):
             toggle_text = "›" if collapsed else "‹"
-            if st.button(toggle_text, key="sidebar_toggle_btn", help="Expand sidebar" if collapsed else "Collapse sidebar"):
+            if st.button(toggle_text, key="sidebar_toggle_btn"):
                 st.session_state.sidebar_collapsed = not collapsed
                 st.rerun()
 
