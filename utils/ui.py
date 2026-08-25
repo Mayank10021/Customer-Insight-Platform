@@ -90,7 +90,7 @@ def inject_base_css():
             font-family: 'Sora', 'Inter', sans-serif !important;
         }}
 
-        /* ---------------- ChatGPT-style sidebar ---------------- */
+        /* ---------------- sidebar ---------------- */
         [data-testid="stSidebar"] {{
             background: {SIDEBAR_BG};
             border-right: 1px solid {BORDER};
@@ -479,7 +479,7 @@ def inject_base_css():
         .fm-page-title {{ font-size: 27px; font-weight:800; color:{NAVY}; margin:0; letter-spacing:-0.4px; }}
         .fm-breadcrumb {{ font-size: 11px; color: {MUTED}; font-weight:700; letter-spacing:0.8px;}}
 
-        /* ---------------- KPI cards: white, icon-in-circle top-right ---------------- */
+        /* ---------------- KPI cards ---------------- */
         .fm-kpi {{
             background: white;
             border-radius: 14px;
